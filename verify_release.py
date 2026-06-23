@@ -10,8 +10,7 @@ from ruleset import RuleSet
 
 EXPECTED = {
     'AI', 'Apple', 'AppleCDN', 'AppleCN', 'CDN', 'China', 'Direct',
-    'Download', 'Global', 'LAN', 'Media', 'MediaCN', 'MediaEU', 'MediaHK',
-    'MediaJP', 'MediaKR', 'MediaTW', 'MediaUS', 'Microsoft', 'MicrosoftCDN',
+    'Download', 'Global', 'LAN', 'Media', 'MediaCN', 'Microsoft', 'MicrosoftCDN',
     'Reject', 'RejectDrop', 'RejectNoDrop',
     'Speedtest', 'Steam', 'Telegram', 'iCloudPrivateRelay',
 }
@@ -20,8 +19,7 @@ EXPECTED = {
 PRIORITY = [
     'Reject', 'RejectDrop', 'RejectNoDrop', 'LAN', 'Direct',
     'AppleCN', 'AppleCDN', 'MicrosoftCDN', 'China', 'GamesCN', 'Download',
-    'CDN', 'Speedtest', 'MediaHK', 'MediaJP', 'MediaKR', 'MediaTW',
-    'MediaUS', 'MediaEU', 'MediaCN', 'Media', 'Apple', 'Microsoft', 'AI',
+    'CDN', 'Speedtest', 'MediaCN', 'Media', 'Apple', 'Microsoft', 'AI',
     'Telegram', 'Global', 'Steam', 'iCloudPrivateRelay',
 ]
 CLASH_TYPES = {

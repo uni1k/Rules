@@ -101,16 +101,6 @@ jobs:
             --source https://ruleset.skk.moe/List/ip/stream.conf \
             > Media.list
 
-      - name: Generate Regional Media Rules
-        run: |
-          for region in eu hk jp kr tw us
-          do
-            python ruleset.py \
-              --source "https://ruleset.skk.moe/List/non_ip/stream_${region}.conf" \
-              --source "https://ruleset.skk.moe/List/ip/stream_${region}.conf" \
-              > "Media${region^^}.list"
-          done
-
       - name: Generate MediaCN Rule
         run: |
           python ruleset.py \
