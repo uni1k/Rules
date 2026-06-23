@@ -1,7 +1,3 @@
-certifi
-chardet
-idna
-ordered-set
-requests
-ruamel.yaml
-urllib3
+ordered-set>=4.1,<5
+requests>=2.32,<3
+ruamel.yaml>=0.18,<0.19

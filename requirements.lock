@@ -1,0 +1,9 @@
+# Generated for the GitHub Actions Python 3.13 runtime.
+certifi==2026.6.17
+charset-normalizer==3.4.7
+idna==3.18
+ordered-set==4.1.0
+requests==2.34.2
+ruamel.yaml==0.18.17
+ruamel.yaml.clib==0.2.15
+urllib3==2.7.0
