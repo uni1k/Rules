@@ -13,12 +13,6 @@
     "Download",
     "CDN",
     "Speedtest",
-    "MediaHK",
-    "MediaJP",
-    "MediaKR",
-    "MediaTW",
-    "MediaUS",
-    "MediaEU",
     "MediaCN",
     "Media",
     "Apple",
@@ -43,12 +37,6 @@
       "DownloadDomain",
       "CDNDomain",
       "SpeedtestDomain",
-      "MediaHKDomain",
-      "MediaJPDomain",
-      "MediaKRDomain",
-      "MediaTWDomain",
-      "MediaUSDomain",
-      "MediaEUDomain",
       "MediaCNDomain",
       "MediaDomain",
       "AppleDomain",
@@ -374,52 +362,6 @@
       },
       "sha256": "0d147782dddec6273a8025782665abefa9ae2bf276ea1ea9e8e4e2dbdaddc07b"
     },
-    "MediaEU": {
-      "rules": 11,
-      "clash_rules": 9,
-      "types": {
-        "DOMAIN": 3,
-        "DOMAIN-KEYWORD": 2,
-        "DOMAIN-SUFFIX": 4,
-        "USER-AGENT": 2
-      },
-      "sha256": "6e90d825a2fa85e4a6fd27c04ed9d113ee9582edba05f30f58b4ebb00890eb44"
-    },
-    "MediaEUDomain": {
-      "rules": 11,
-      "clash_rules": 9,
-      "types": {
-        "DOMAIN": 3,
-        "DOMAIN-KEYWORD": 2,
-        "DOMAIN-SUFFIX": 4,
-        "USER-AGENT": 2
-      },
-      "sha256": "6e90d825a2fa85e4a6fd27c04ed9d113ee9582edba05f30f58b4ebb00890eb44"
-    },
-    "MediaHK": {
-      "rules": 37,
-      "clash_rules": 30,
-      "types": {
-        "DOMAIN": 12,
-        "DOMAIN-KEYWORD": 2,
-        "DOMAIN-SUFFIX": 16,
-        "PROCESS-NAME": 5,
-        "USER-AGENT": 2
-      },
-      "sha256": "c0d87548095a3a230bd61f3831a3aae7e2763b2252961629b25983baf12f8cf4"
-    },
-    "MediaHKDomain": {
-      "rules": 37,
-      "clash_rules": 30,
-      "types": {
-        "DOMAIN": 12,
-        "DOMAIN-KEYWORD": 2,
-        "DOMAIN-SUFFIX": 16,
-        "PROCESS-NAME": 5,
-        "USER-AGENT": 2
-      },
-      "sha256": "c0d87548095a3a230bd61f3831a3aae7e2763b2252961629b25983baf12f8cf4"
-    },
     "MediaIP": {
       "rules": 1138,
       "clash_rules": 1138,
@@ -428,90 +370,6 @@
         "IP-CIDR6": 6
       },
       "sha256": "d2f8a2e6143a523e498607f68061e4f18edbf5d3bc1478104005bd64ff4bde2b"
-    },
-    "MediaJP": {
-      "rules": 28,
-      "clash_rules": 26,
-      "types": {
-        "DOMAIN": 2,
-        "DOMAIN-SUFFIX": 24,
-        "USER-AGENT": 2
-      },
-      "sha256": "d142dc9bb69abf1b724ef08c80c7ca22e71f9c2eda0062f264bd5760540a267f"
-    },
-    "MediaJPDomain": {
-      "rules": 28,
-      "clash_rules": 26,
-      "types": {
-        "DOMAIN": 2,
-        "DOMAIN-SUFFIX": 24,
-        "USER-AGENT": 2
-      },
-      "sha256": "d142dc9bb69abf1b724ef08c80c7ca22e71f9c2eda0062f264bd5760540a267f"
-    },
-    "MediaKR": {
-      "rules": 4,
-      "clash_rules": 3,
-      "types": {
-        "DOMAIN": 1,
-        "DOMAIN-SUFFIX": 2,
-        "USER-AGENT": 1
-      },
-      "sha256": "92003fa1623704acdaa55f62c4e0c55b92e97c95b3afc2c8406bbbd6c458a5c9"
-    },
-    "MediaKRDomain": {
-      "rules": 4,
-      "clash_rules": 3,
-      "types": {
-        "DOMAIN": 1,
-        "DOMAIN-SUFFIX": 2,
-        "USER-AGENT": 1
-      },
-      "sha256": "92003fa1623704acdaa55f62c4e0c55b92e97c95b3afc2c8406bbbd6c458a5c9"
-    },
-    "MediaTW": {
-      "rules": 39,
-      "clash_rules": 34,
-      "types": {
-        "DOMAIN": 16,
-        "DOMAIN-SUFFIX": 18,
-        "PROCESS-NAME": 1,
-        "USER-AGENT": 4
-      },
-      "sha256": "26da8f8ea932fb9cec16d4898e92f5cbc61334fc9d09697b189a3ed354d40b1e"
-    },
-    "MediaTWDomain": {
-      "rules": 39,
-      "clash_rules": 34,
-      "types": {
-        "DOMAIN": 16,
-        "DOMAIN-SUFFIX": 18,
-        "PROCESS-NAME": 1,
-        "USER-AGENT": 4
-      },
-      "sha256": "26da8f8ea932fb9cec16d4898e92f5cbc61334fc9d09697b189a3ed354d40b1e"
-    },
-    "MediaUS": {
-      "rules": 53,
-      "clash_rules": 43,
-      "types": {
-        "DOMAIN": 15,
-        "DOMAIN-SUFFIX": 28,
-        "PROCESS-NAME": 1,
-        "USER-AGENT": 9
-      },
-      "sha256": "998902ed78e04b85b7d0a6b86a25dc2669db6f57af0c673699285829a983249b"
-    },
-    "MediaUSDomain": {
-      "rules": 53,
-      "clash_rules": 43,
-      "types": {
-        "DOMAIN": 15,
-        "DOMAIN-SUFFIX": 28,
-        "PROCESS-NAME": 1,
-        "USER-AGENT": 9
-      },
-      "sha256": "998902ed78e04b85b7d0a6b86a25dc2669db6f57af0c673699285829a983249b"
     },
     "Microsoft": {
       "rules": 680,
@@ -710,23 +568,8 @@
       "sha256": "5e50ee804d95c92a9db651d0ac30f2d609e6849b39599f5e0e5568cb05dc2f83"
     }
   },
-  "cross_provider_exact_duplicates": 630,
+  "cross_provider_exact_duplicates": 503,
   "duplicate_examples": [
-    {
-      "rule": "DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com",
-      "providers": [
-        "MediaHK",
-        "MediaTW",
-        "Media"
-      ]
-    },
-    {
-      "rule": "DOMAIN,4gtvfreepcvod-cds.cdn.hinet.net",
-      "providers": [
-        "MediaTW",
-        "Media"
-      ]
-    },
     {
       "rule": "DOMAIN,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe",
       "providers": [
@@ -740,12 +583,6 @@
         "China",
         "Download",
         "CDN",
-        "MediaHK",
-        "MediaJP",
-        "MediaKR",
-        "MediaTW",
-        "MediaUS",
-        "MediaEU",
         "MediaCN",
         "Media",
         "Apple",
@@ -763,20 +600,6 @@
       ]
     },
     {
-      "rule": "DOMAIN,ana.video.friday.tw",
-      "providers": [
-        "MediaTW",
-        "Media"
-      ]
-    },
-    {
-      "rule": "DOMAIN,apm-misaka.biliapi.net",
-      "providers": [
-        "MediaHK",
-        "Media"
-      ]
-    },
-    {
       "rule": "DOMAIN,aterm.me",
       "providers": [
         "LAN",
@@ -784,52 +607,10 @@
       ]
     },
     {
-      "rule": "DOMAIN,athome.fandango.com",
-      "providers": [
-        "MediaUS",
-        "Media"
-      ]
-    },
-    {
-      "rule": "DOMAIN,bbc.mp-pxcdn.com",
-      "providers": [
-        "MediaEU",
-        "Media"
-      ]
-    },
-    {
-      "rule": "DOMAIN,bcbolt446c5271-a.akamaihd.net",
-      "providers": [
-        "MediaUS",
-        "Media"
-      ]
-    },
-    {
       "rule": "DOMAIN,c.1password.com",
       "providers": [
         "Download",
         "CDN"
-      ]
-    },
-    {
-      "rule": "DOMAIN,cbsi.live.ott.irdeto.com",
-      "providers": [
-        "MediaUS",
-        "Media"
-      ]
-    },
-    {
-      "rule": "DOMAIN,cbsplaylistserver.aws.syncbak.com",
-      "providers": [
-        "MediaUS",
-        "Media"
-      ]
-    },
-    {
-      "rule": "DOMAIN,cbsservice.aws.syncbak.com",
-      "providers": [
-        "MediaUS",
-        "Media"
       ]
     },
     {
@@ -851,13 +632,6 @@
       "providers": [
         "LAN",
         "Direct"
-      ]
-    },
-    {
-      "rule": "DOMAIN,d1k2us671qcoau.cloudfront.net",
-      "providers": [
-        "MediaHK",
-        "Media"
       ]
     },
     {
@@ -896,13 +670,6 @@
       ]
     },
     {
-      "rule": "DOMAIN,d2anahhhmp1ffz.cloudfront.net",
-      "providers": [
-        "MediaHK",
-        "Media"
-      ]
-    },
-    {
       "rule": "DOMAIN,d3196yreox78o9.cloudfront.net",
       "providers": [
         "Media",
@@ -910,75 +677,10 @@
       ]
     },
     {
-      "rule": "DOMAIN,d3c7rimkq79yfu.cloudfront.net",
-      "providers": [
-        "MediaTW",
-        "Media"
-      ]
-    },
-    {
-      "rule": "DOMAIN,dashasiafox.akamaized.net",
-      "providers": [
-        "MediaUS",
-        "Media"
-      ]
-    },
-    {
-      "rule": "DOMAIN,dfp6rglgjqszk.cloudfront.net",
-      "providers": [
-        "MediaHK",
-        "Media"
-      ]
-    },
-    {
       "rule": "DOMAIN,dmqdd6hw24ucf.cloudfront.net",
       "providers": [
         "Media",
         "Global"
-      ]
-    },
-    {
-      "rule": "DOMAIN,ds-linear-abematv.akamaized.net",
-      "providers": [
-        "MediaJP",
-        "Media"
-      ]
-    },
-    {
-      "rule": "DOMAIN,edge.api.brightcove.com",
-      "providers": [
-        "MediaUS",
-        "Media"
-      ]
-    },
-    {
-      "rule": "DOMAIN,gamer-cds.cdn.hinet.net",
-      "providers": [
-        "MediaTW",
-        "Media"
-      ]
-    },
-    {
-      "rule": "DOMAIN,gamer2-cds.cdn.hinet.net",
-      "providers": [
-        "MediaTW",
-        "Media"
-      ]
-    },
-    {
-      "rule": "DOMAIN,hbolb.onwardsmg.com",
-      "providers": [
-        "MediaHK",
-        "MediaTW",
-        "Media"
-      ]
-    },
-    {
-      "rule": "DOMAIN,hbounify-prod.evergent.com",
-      "providers": [
-        "MediaHK",
-        "MediaTW",
-        "Media"
       ]
     },
     {
@@ -996,25 +698,10 @@
       ]
     },
     {
-      "rule": "DOMAIN,itvpnpmobile-a.akamaihd.net",
-      "providers": [
-        "MediaEU",
-        "Media"
-      ]
-    },
-    {
       "rule": "DOMAIN,js.partnerstack.com",
       "providers": [
         "Reject",
         "CDN"
-      ]
-    },
-    {
-      "rule": "DOMAIN,manifest.prod.boltdns.net",
-      "providers": [
-        "MediaHK",
-        "MediaTW",
-        "Media"
       ]
     },
     {
@@ -1049,15 +736,6 @@
       "rule": "DOMAIN,players.brightcove.net",
       "providers": [
         "CDN",
-        "MediaHK",
-        "MediaTW",
-        "Media"
-      ]
-    },
-    {
-      "rule": "DOMAIN,prod-api.crackle.com",
-      "providers": [
-        "MediaUS",
         "Media"
       ]
     },
@@ -1090,13 +768,6 @@
       ]
     },
     {
-      "rule": "DOMAIN,staticasiafox.akamaized.net",
-      "providers": [
-        "MediaUS",
-        "Media"
-      ]
-    },
-    {
       "rule": "DOMAIN,steampipe.akamaized.net",
       "providers": [
         "Download",
@@ -1118,20 +789,6 @@
       ]
     },
     {
-      "rule": "DOMAIN,tubi.tv",
-      "providers": [
-        "MediaUS",
-        "Media"
-      ]
-    },
-    {
-      "rule": "DOMAIN,tubitv.com",
-      "providers": [
-        "MediaUS",
-        "Media"
-      ]
-    },
-    {
       "rule": "DOMAIN,udata.namespace.so",
       "providers": [
         "Reject",
@@ -1146,52 +803,10 @@
       ]
     },
     {
-      "rule": "DOMAIN,upos-bstar-mirrorakam.akamaized.net",
-      "providers": [
-        "MediaHK",
-        "Media"
-      ]
-    },
-    {
-      "rule": "DOMAIN,upos-bstar1-mirrorakam.akamaized.net",
-      "providers": [
-        "MediaHK",
-        "Media"
-      ]
-    },
-    {
-      "rule": "DOMAIN,video.friday.tw",
-      "providers": [
-        "MediaTW",
-        "Media"
-      ]
-    },
-    {
       "rule": "DOMAIN,vsmarketplacebadge.apphb.com",
       "providers": [
         "CDN",
         "Microsoft"
-      ]
-    },
-    {
-      "rule": "DOMAIN,vudu.com",
-      "providers": [
-        "MediaUS",
-        "Media"
-      ]
-    },
-    {
-      "rule": "DOMAIN,www.tubi.tv",
-      "providers": [
-        "MediaUS",
-        "Media"
-      ]
-    },
-    {
-      "rule": "DOMAIN,www.tubitv.com",
-      "providers": [
-        "MediaUS",
-        "Media"
       ]
     },
     {
@@ -1209,31 +824,10 @@
       ]
     },
     {
-      "rule": "DOMAIN-KEYWORD,bbcfmt",
-      "providers": [
-        "MediaEU",
-        "Media"
-      ]
-    },
-    {
-      "rule": "DOMAIN-KEYWORD,nowtv100",
-      "providers": [
-        "MediaHK",
-        "Media"
-      ]
-    },
-    {
       "rule": "DOMAIN-KEYWORD,onedrive",
       "providers": [
         "Microsoft",
         "Global"
-      ]
-    },
-    {
-      "rule": "DOMAIN-KEYWORD,rthklive",
-      "providers": [
-        "MediaHK",
-        "Media"
       ]
     },
     {
@@ -1260,7 +854,6 @@
     {
       "rule": "DOMAIN-KEYWORD,uk-live",
       "providers": [
-        "MediaEU",
         "Media",
         "Global"
       ]
@@ -1439,9 +1032,261 @@
         "CDN",
         "Global"
       ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,4gtv.tv",
+      "providers": [
+        "Media",
+        "Global"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,71.am.com",
+      "providers": [
+        "China",
+        "MediaCN"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,9cache.com",
+      "providers": [
+        "CDN",
+        "Global"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,abc.com",
+      "providers": [
+        "Media",
+        "Global"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,acgvideo.com",
+      "providers": [
+        "China",
+        "MediaCN"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,adguardcdn.com",
+      "providers": [
+        "CDN",
+        "Global"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,ads-twitter.com",
+      "providers": [
+        "Reject",
+        "Global"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,adtidy.org",
+      "providers": [
+        "CDN",
+        "Global"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,adultfriendfinder.com",
+      "providers": [
+        "Reject",
+        "Global"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,advertisercommunity.com",
+      "providers": [
+        "Reject",
+        "Global"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,ahcdn.com",
+      "providers": [
+        "CDN",
+        "Global"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,airtableusercontent.com",
+      "providers": [
+        "CDN",
+        "Global"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,aiv-cdn.net",
+      "providers": [
+        "Media",
+        "Global"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,aiv-delivery.net",
+      "providers": [
+        "Media",
+        "Global"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,amazonvideo.com",
+      "providers": [
+        "Media",
+        "Global"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,ameba.jp",
+      "providers": [
+        "Media",
+        "Global"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,ameblo.jp",
+      "providers": [
+        "Media",
+        "Global"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,amplitude.com",
+      "providers": [
+        "Reject",
+        "Global"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,ampproject.org",
+      "providers": [
+        "CDN",
+        "Global"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,angularjs.org",
+      "providers": [
+        "CDN",
+        "Global"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,ant.design",
+      "providers": [
+        "CDN",
+        "Global"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,anthropic.com",
+      "providers": [
+        "AI",
+        "Global"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,appsto.re",
+      "providers": [
+        "Apple",
+        "Global"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,archive.org",
+      "providers": [
+        "Download",
+        "Global"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,aspnetcdn.com",
+      "providers": [
+        "CDN",
+        "Microsoft"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,assets-yammer.com",
+      "providers": [
+        "CDN",
+        "Microsoft"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,asusrouter.com",
+      "providers": [
+        "LAN",
+        "Direct"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,azure-mobile.net",
+      "providers": [
+        "Microsoft",
+        "Global"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,azurecontainer.io",
+      "providers": [
+        "Microsoft",
+        "Global"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,azurewebsites.net",
+      "providers": [
+        "Microsoft",
+        "Global"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,badoocdn.com",
+      "providers": [
+        "CDN",
+        "Global"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,bahamut.com.tw",
+      "providers": [
+        "Media",
+        "Global"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,baidustatic.com",
+      "providers": [
+        "Reject",
+        "China"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,bam.nr-data.net",
+      "providers": [
+        "Reject",
+        "Media"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,bamgrid.com",
+      "providers": [
+        "Media",
+        "Global"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,bannedbook.org",
+      "providers": [
+        "Reject",
+        "Global"
+      ]
     }
   ],
-  "cross_provider_domain_coverages": 4210,
+  "cross_provider_domain_coverages": 4208,
   "domain_coverage_examples": [
     {
       "domain": "gs-loc-cn.apple.com",
@@ -2253,7 +2098,7 @@
       ]
     }
   ],
-  "workflow_sha256": "c3742882ac335fee9bc839c9fa476f924f489fc74efd5b6cc0cbca1de1a4a04a",
+  "workflow_sha256": "48dbb3b5d16724f334932cfa5475d40a4b4b45fb8aa9b4c7237bebec38d8bbb7",
   "configured_sources": [
     "DOMAIN-SUFFIX,asiamiles.com",
     "DOMAIN-SUFFIX,cathaypacific.com",
@@ -2298,7 +2143,6 @@
     "https://ruleset.skk.moe/List/ip/lan.conf",
     "https://ruleset.skk.moe/List/ip/reject.conf",
     "https://ruleset.skk.moe/List/ip/stream.conf",
-    "https://ruleset.skk.moe/List/ip/stream_${region}.conf",
     "https://ruleset.skk.moe/List/ip/telegram.conf",
     "https://ruleset.skk.moe/List/non_ip/ai.conf",
     "https://ruleset.skk.moe/List/non_ip/apple_cn.conf",
@@ -2316,7 +2160,6 @@
     "https://ruleset.skk.moe/List/non_ip/reject-no-drop.conf",
     "https://ruleset.skk.moe/List/non_ip/reject.conf",
     "https://ruleset.skk.moe/List/non_ip/stream.conf",
-    "https://ruleset.skk.moe/List/non_ip/stream_${region}.conf",
     "https://ruleset.skk.moe/List/non_ip/telegram.conf",
     "https://www.naiixi.com/Extra_CN.list",
     "https://www.naiixi.com/Extra_CN_2.list"
