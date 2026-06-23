@@ -9,7 +9,6 @@ DOMAIN-SUFFIX,biliapi.com
 DOMAIN-SUFFIX,bilivideo.com
 DOMAIN-SUFFIX,hdslb.com
 DOMAIN,upos-hz-mirrorakam.akamaized.net
-// Hong Kong,Macau
 USER-AGENT,bili-inter*
 DOMAIN,apiintl.biliapi.net
 USER-AGENT,*QIYI*
@@ -219,3 +218,5 @@ DOMAIN-SUFFIX,xinyan.cn
 DOMAIN-SUFFIX,yeyousg.com
 DOMAIN-SUFFIX,yidianliulan.cn
 DOMAIN-SUFFIX,yidianliulan.com
+DOMAIN,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe
+USER-AGENT,%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90
