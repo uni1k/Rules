@@ -49,7 +49,7 @@ jobs:
       - name: Generate GlobalMedia Rule
         run: |
           python ruleset.py \
-            --source https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/GlobalMedia/GlobalMedia_All.list \
+            --source https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/GlobalMedia/GlobalMedia_All_No_Resolve.list \
             > GlobalMedia.list
 
       - name: Generate Google Rule
@@ -100,13 +100,13 @@ jobs:
       - name: Generate Mainland Rule
         run: |
           python ruleset.py \
-            --source https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaMaxNoMedia/ChinaMaxNoMedia_All.list \
+            --source https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list \
             > Mainland.list
 
       - name: Generate Global Rule
         run: |
           python ruleset.py \
-            --source https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Global/Global_All.list \
+            --source https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Global/Global_All_No_Resolve.list \
             > Global.list
 
       - name: Generate Game Rule
@@ -118,7 +118,7 @@ jobs:
       - name: Generate Reject Rule
         run: |
           python ruleset.py --force-no-resolve \
-            --source https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AdvertisingLite/AdvertisingLite_All.list \
+            --source https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AdvertisingLite/AdvertisingLite_All_No_Resolve.list \
             --source https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Hijacking/Hijacking.list \
             --source https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Privacy/Privacy_All.list \
             --source https://ruleset.skk.moe/List/non_ip/reject.conf \
