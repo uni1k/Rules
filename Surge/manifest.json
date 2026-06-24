@@ -77,7 +77,7 @@
         "PROCESS-NAME": 1,
         "USER-AGENT": 46
       },
-      "sha256": "d5c59b9dece2fc57eb0798100f0efa5f5cc2033b35a70b37a68446c4fccf3ede"
+      "sha256": "d67a1db610c076840aa25b948200ab72c2e8ca933aa147bb2fc4ee5bd5fdf1a2"
     },
     "GlobalMedia": {
       "rules": 2335,
@@ -92,7 +92,7 @@
         "URL-REGEX": 1,
         "USER-AGENT": 69
       },
-      "sha256": "57554a98d45d51a7e0395ee7f8baa5189b72a6f1daa8919987840884851d31e1"
+      "sha256": "2f6cee1ea0d6b5556b2011ba5efb94d1d461e25981b9bad8b96d811048d35a46"
     },
     "Google": {
       "rules": 703,
@@ -134,7 +134,7 @@
         "PROCESS-NAME": 12,
         "USER-AGENT": 65
       },
-      "sha256": "cd7aa3de0aad8ef30af29cfa619f13f728d6f92c79640073a1f42b4f0d48c318"
+      "sha256": "24cbc83649271e3732560eb85dc1afb65c462f0d4709de2060540cece453305a"
     },
     "MainlandMedia": {
       "rules": 446,
@@ -189,7 +189,7 @@
       "sha256": "70cef2ac856e8eb547e3b61171f68d3a957f373139b6e42666b8b784a2c63511"
     }
   },
-  "cross_provider_exact_duplicates": 2889,
+  "cross_provider_exact_duplicates": 2939,
   "duplicate_examples": [
     {
       "rule": "DOMAIN,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe",
@@ -1700,18 +1700,18 @@
       ]
     }
   ],
-  "workflow_sha256": "499e705073065d2586980b1ce5fc15853fc4a3d9e295a6f14d145cb98136f8b4",
+  "workflow_sha256": "3b6ffd192612bb76f9bc36e2cf1566527dbb92f5f509945d58afab2d6cfff0c9",
   "configured_sources": [
     "https://raw.githubusercontent.com/Coldvvater/Mononoke/refs/heads/master/Surge/Rules/AI.list",
-    "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AdvertisingLite/AdvertisingLite_All.list",
+    "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AdvertisingLite/AdvertisingLite_All_No_Resolve.list",
     "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Apple/Apple.list",
-    "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaMaxNoMedia/ChinaMaxNoMedia_All.list",
+    "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list",
     "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaMedia/ChinaMedia.list",
     "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Claude/Claude.list",
     "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Game/Game.list",
     "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Gemini/Gemini.list",
-    "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Global/Global_All.list",
-    "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/GlobalMedia/GlobalMedia_All.list",
+    "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Global/Global_All_No_Resolve.list",
+    "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/GlobalMedia/GlobalMedia_All_No_Resolve.list",
     "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Google/Google.list",
     "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Hijacking/Hijacking.list",
     "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Microsoft/Microsoft.list",
