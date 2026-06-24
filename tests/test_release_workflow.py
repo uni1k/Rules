@@ -14,13 +14,9 @@ class ReleaseWorkflowTests(unittest.TestCase):
         )
         self.assertIsNotNone(match)
         body = match.group('body')
-        self.assertIn(
-            'blackmatrix7/ios_rule_script/master/rule/Surge/Copilot/Copilot.list',
-            body,
-        )
         self.assertIn('https://ruleset.skk.moe/List/non_ip/ai.conf', body)
         self.assertIn(
-            'https://raw.githubusercontent.com/xjasonlyu/Rules/release/Surge/AI.list',
+            'https://raw.githubusercontent.com/Coldvvater/Mononoke/refs/heads/master/Surge/Rules/AI.list',
             body,
         )
 

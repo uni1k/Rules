@@ -74,9 +74,8 @@ jobs:
             --source https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list \
             --source https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Claude/Claude.list \
             --source https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Gemini/Gemini.list \
-            --source https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Copilot/Copilot.list \
             --source https://ruleset.skk.moe/List/non_ip/ai.conf \
-            --source https://raw.githubusercontent.com/xjasonlyu/Rules/release/Surge/AI.list \
+            --source https://raw.githubusercontent.com/Coldvvater/Mononoke/refs/heads/master/Surge/Rules/AI.list \
             > AI.list
 
 
