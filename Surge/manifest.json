@@ -31,16 +31,16 @@
   },
   "providers": {
     "AI": {
-      "rules": 107,
-      "clash_rules": 106,
+      "rules": 88,
+      "clash_rules": 87,
       "types": {
-        "DOMAIN": 39,
-        "DOMAIN-KEYWORD": 6,
-        "DOMAIN-SUFFIX": 59,
+        "DOMAIN": 25,
+        "DOMAIN-KEYWORD": 5,
+        "DOMAIN-SUFFIX": 55,
         "IP-CIDR": 2,
         "URL-REGEX": 1
       },
-      "sha256": "4f8fed509ba2e6e14778ab5656dbf649a194cd7db98ff25effa75978d9491628"
+      "sha256": "f3fba4a77c26cbbd00b1275281c3d6e9211ba8b77347ba90b277e4e50c9ad05f"
     },
     "Apple": {
       "rules": 56,
@@ -189,7 +189,7 @@
       "sha256": "70cef2ac856e8eb547e3b61171f68d3a957f373139b6e42666b8b784a2c63511"
     }
   },
-  "cross_provider_exact_duplicates": 2891,
+  "cross_provider_exact_duplicates": 2889,
   "duplicate_examples": [
     {
       "rule": "DOMAIN,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe",
@@ -232,13 +232,6 @@
       "providers": [
         "GlobalMedia",
         "Mainland"
-      ]
-    },
-    {
-      "rule": "DOMAIN,sydney.bing.com",
-      "providers": [
-        "GlobalMedia",
-        "AI"
       ]
     },
     {
@@ -895,9 +888,16 @@
         "GlobalMedia",
         "Global"
       ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,amebame.com",
+      "providers": [
+        "GlobalMedia",
+        "Global"
+      ]
     }
   ],
-  "cross_provider_domain_coverages": 3693,
+  "cross_provider_domain_coverages": 3681,
   "domain_coverage_examples": [
     {
       "domain": "00-gov.cn",
@@ -1700,14 +1700,14 @@
       ]
     }
   ],
-  "workflow_sha256": "371326f6b14adf416f95c1ba0998d1c5fe65aa029805cfdd7d35699d0edbb95b",
+  "workflow_sha256": "499e705073065d2586980b1ce5fc15853fc4a3d9e295a6f14d145cb98136f8b4",
   "configured_sources": [
+    "https://raw.githubusercontent.com/Coldvvater/Mononoke/refs/heads/master/Surge/Rules/AI.list",
     "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AdvertisingLite/AdvertisingLite_All.list",
     "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Apple/Apple.list",
     "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaMaxNoMedia/ChinaMaxNoMedia_All.list",
     "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaMedia/ChinaMedia.list",
     "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Claude/Claude.list",
-    "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Copilot/Copilot.list",
     "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Game/Game.list",
     "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Gemini/Gemini.list",
     "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Global/Global_All.list",
@@ -1718,7 +1718,6 @@
     "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list",
     "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Privacy/Privacy_All.list",
     "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Telegram/Telegram.list",
-    "https://raw.githubusercontent.com/xjasonlyu/Rules/release/Surge/AI.list",
     "https://ruleset.skk.moe/List/domainset/reject.conf",
     "https://ruleset.skk.moe/List/ip/lan.conf",
     "https://ruleset.skk.moe/List/ip/reject.conf",
