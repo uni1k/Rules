@@ -2,6 +2,7 @@
   "provider_priority": [
     "Reject",
     "LAN",
+    "Direct",
     "MainlandMedia",
     "GlobalMedia",
     "Apple",
@@ -10,6 +11,7 @@
     "Telegram",
     "Mainland",
     "Google",
+    "GitHub",
     "Game",
     "Global"
   ],
@@ -17,6 +19,7 @@
     "providers": [
       "Reject",
       "LAN",
+      "Direct",
       "MainlandMedia",
       "GlobalMedia",
       "Apple",
@@ -25,6 +28,7 @@
       "Telegram",
       "Mainland",
       "Google",
+      "GitHub",
       "Game",
       "Global"
     ]
@@ -43,16 +47,30 @@
       "sha256": "f3fba4a77c26cbbd00b1275281c3d6e9211ba8b77347ba90b277e4e50c9ad05f"
     },
     "Apple": {
-      "rules": 56,
-      "clash_rules": 20,
+      "rules": 1616,
+      "clash_rules": 1580,
       "types": {
+        "DOMAIN": 9,
         "DOMAIN-KEYWORD": 7,
+        "DOMAIN-SUFFIX": 1551,
         "IP-CIDR": 10,
         "IP-CIDR6": 3,
         "PROCESS-NAME": 13,
         "USER-AGENT": 23
       },
-      "sha256": "a330f5100b85742cec6a8a53d0b7246a7873060aa60f8cc622a133b8796d92ef"
+      "sha256": "f96a94988d09a14ac151278a27eead804489cb66abd11027ea0fe89c92b2555b"
+    },
+    "Direct": {
+      "rules": 335,
+      "clash_rules": 295,
+      "types": {
+        "DOMAIN": 74,
+        "DOMAIN-KEYWORD": 36,
+        "DOMAIN-SUFFIX": 185,
+        "PROCESS-NAME": 39,
+        "USER-AGENT": 1
+      },
+      "sha256": "1de51995e61256a07cf9fcb284e35a78608ec8ea30ec300ab4f95866770cc737"
     },
     "Game": {
       "rules": 597,
@@ -64,6 +82,15 @@
         "IP-CIDR": 46
       },
       "sha256": "9f9ceccff852cda862499a6fad8d251f795bd64e2083361dcdcee86a0e61f3e7"
+    },
+    "GitHub": {
+      "rules": 31,
+      "clash_rules": 31,
+      "types": {
+        "DOMAIN-KEYWORD": 1,
+        "DOMAIN-SUFFIX": 30
+      },
+      "sha256": "95299a16144b19c5ff24298c6ba2ab731dc05b99c22340b566408cedf71124ea"
     },
     "Global": {
       "rules": 34801,
@@ -109,18 +136,15 @@
       "sha256": "01e72a7d6892c1bb40013819fbc24b9a83c2c5b4151936a57b3319c4ded5f405"
     },
     "LAN": {
-      "rules": 229,
-      "clash_rules": 192,
+      "rules": 61,
+      "clash_rules": 61,
       "types": {
-        "DOMAIN": 18,
-        "DOMAIN-KEYWORD": 9,
-        "DOMAIN-SUFFIX": 154,
+        "DOMAIN": 12,
+        "DOMAIN-SUFFIX": 38,
         "IP-CIDR": 8,
-        "IP-CIDR6": 3,
-        "PROCESS-NAME": 36,
-        "USER-AGENT": 1
+        "IP-CIDR6": 3
       },
-      "sha256": "9abcccba8c866b46fe9c98bf1fe9b06b33c50334955f3d88d78d6cea46e980a0"
+      "sha256": "815e24206d8e95ddd1272fa2031f6f3481a78b14e35115ad66a8f1cf14205650"
     },
     "Mainland": {
       "rules": 124593,
@@ -163,17 +187,17 @@
       "sha256": "a8b516163e1c07149d8bc7162f2edf65596c1a189feea09bed312dc8ad05c56b"
     },
     "Reject": {
-      "rules": 163989,
-      "clash_rules": 163984,
+      "rules": 164041,
+      "clash_rules": 164036,
       "types": {
         "DOMAIN": 24788,
         "DOMAIN-KEYWORD": 334,
-        "DOMAIN-SUFFIX": 137904,
+        "DOMAIN-SUFFIX": 137956,
         "IP-CIDR": 952,
         "IP-CIDR6": 6,
         "URL-REGEX": 5
       },
-      "sha256": "69b85e1b68403443dbbd38155961a6393f83159d44d49b3bc885c7c182617583"
+      "sha256": "a8f59d8fc44a30646b75dbd0777535eae1d4abdb038abdad74aa46dec162a778"
     },
     "Telegram": {
       "rules": 40,
@@ -189,14 +213,22 @@
       "sha256": "70cef2ac856e8eb547e3b61171f68d3a957f373139b6e42666b8b784a2c63511"
     }
   },
-  "cross_provider_exact_duplicates": 2939,
+  "cross_provider_exact_duplicates": 4510,
   "duplicate_examples": [
     {
       "rule": "DOMAIN,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe",
       "providers": [
         "Reject",
         "LAN",
+        "Direct",
         "AI"
+      ]
+    },
+    {
+      "rule": "DOMAIN,ad.10010.com",
+      "providers": [
+        "Reject",
+        "Direct"
       ]
     },
     {
@@ -207,10 +239,52 @@
       ]
     },
     {
+      "rule": "DOMAIN,analytics.strava.com",
+      "providers": [
+        "Direct",
+        "Mainland"
+      ]
+    },
+    {
       "rule": "DOMAIN,api.iplay.163.com",
       "providers": [
         "Reject",
         "MainlandMedia"
+      ]
+    },
+    {
+      "rule": "DOMAIN,appleworldwidedeveloper.hb-api.omtrdc.net",
+      "providers": [
+        "Apple",
+        "Global"
+      ]
+    },
+    {
+      "rule": "DOMAIN,appleworldwidedeveloper.sc.omtrdc.net",
+      "providers": [
+        "Apple",
+        "Global"
+      ]
+    },
+    {
+      "rule": "DOMAIN,aterm.me",
+      "providers": [
+        "LAN",
+        "Direct"
+      ]
+    },
+    {
+      "rule": "DOMAIN,beatselectronicsllc.tt.omtrdc.net",
+      "providers": [
+        "Apple",
+        "Global"
+      ]
+    },
+    {
+      "rule": "DOMAIN,console.gl-inet.com",
+      "providers": [
+        "LAN",
+        "Direct"
       ]
     },
     {
@@ -221,6 +295,34 @@
       ]
     },
     {
+      "rule": "DOMAIN,homerouter.cpe",
+      "providers": [
+        "LAN",
+        "Direct"
+      ]
+    },
+    {
+      "rule": "DOMAIN,instant.arubanetworks.com",
+      "providers": [
+        "LAN",
+        "Direct"
+      ]
+    },
+    {
+      "rule": "DOMAIN,livew.l.qq.com",
+      "providers": [
+        "Reject",
+        "Direct"
+      ]
+    },
+    {
+      "rule": "DOMAIN,log.mmstat.com",
+      "providers": [
+        "Reject",
+        "Direct"
+      ]
+    },
+    {
       "rule": "DOMAIN,mam.netease.com",
       "providers": [
         "Reject",
@@ -228,10 +330,80 @@
       ]
     },
     {
+      "rule": "DOMAIN,mobile.hotspot",
+      "providers": [
+        "LAN",
+        "Direct"
+      ]
+    },
+    {
+      "rule": "DOMAIN,ntt.setup",
+      "providers": [
+        "LAN",
+        "Direct"
+      ]
+    },
+    {
+      "rule": "DOMAIN,origin-a.akamaihd.net",
+      "providers": [
+        "Direct",
+        "Mainland"
+      ]
+    },
+    {
+      "rule": "DOMAIN,pi.hole",
+      "providers": [
+        "LAN",
+        "Direct"
+      ]
+    },
+    {
+      "rule": "DOMAIN,repeater.asus.com",
+      "providers": [
+        "LAN",
+        "Direct"
+      ]
+    },
+    {
+      "rule": "DOMAIN,router.asus.com",
+      "providers": [
+        "LAN",
+        "Direct"
+      ]
+    },
+    {
       "rule": "DOMAIN,rthklive2-lh.akamaihd.net",
       "providers": [
         "GlobalMedia",
         "Mainland"
+      ]
+    },
+    {
+      "rule": "DOMAIN,setmeup.arubanetworks.com",
+      "providers": [
+        "LAN",
+        "Direct"
+      ]
+    },
+    {
+      "rule": "DOMAIN,unifi",
+      "providers": [
+        "LAN",
+        "Direct"
+      ]
+    },
+    {
+      "rule": "DOMAIN,vd.l.qq.com",
+      "providers": [
+        "Reject",
+        "Direct"
+      ]
+    },
+    {
+      "rule": "DOMAIN,vi.l.qq.com",
+      "providers": [
+        "Reject",
+        "Direct"
       ]
     },
     {
@@ -267,6 +439,13 @@
       "providers": [
         "Google",
         "Global"
+      ]
+    },
+    {
+      "rule": "DOMAIN-KEYWORD,buy.itunes.apple.com",
+      "providers": [
+        "Direct",
+        "Apple"
       ]
     },
     {
@@ -347,6 +526,20 @@
       ]
     },
     {
+      "rule": "DOMAIN-SUFFIX,10.in-addr.arpa",
+      "providers": [
+        "LAN",
+        "Direct"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,100beatscheap.com",
+      "providers": [
+        "Apple",
+        "Global"
+      ]
+    },
+    {
       "rule": "DOMAIN-SUFFIX,100classicbooks.com",
       "providers": [
         "Game",
@@ -361,10 +554,157 @@
       ]
     },
     {
+      "rule": "DOMAIN-SUFFIX,12diasdepresentesdeitunes.com",
+      "providers": [
+        "Apple",
+        "Global"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,12diasderegalosdeitunes.cl",
+      "providers": [
+        "Apple",
+        "Global"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,12diasderegalosdeitunes.co",
+      "providers": [
+        "Apple",
+        "Global"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,12diasderegalosdeitunes.co.cr",
+      "providers": [
+        "Apple",
+        "Global"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,12diasderegalosdeitunes.co.ni",
+      "providers": [
+        "Apple",
+        "Global"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,12diasderegalosdeitunes.co.ve",
+      "providers": [
+        "Apple",
+        "Global"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,12diasderegalosdeitunes.com",
+      "providers": [
+        "Apple",
+        "Global"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,12diasderegalosdeitunes.com.co",
+      "providers": [
+        "Apple",
+        "Global"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,12diasderegalosdeitunes.com.hn",
+      "providers": [
+        "Apple",
+        "Global"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,12diasderegalosdeitunes.com.ni",
+      "providers": [
+        "Apple",
+        "Global"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,12diasderegalosdeitunes.com.ve",
+      "providers": [
+        "Apple",
+        "Global"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,12diasderegalosdeitunes.cr",
+      "providers": [
+        "Apple",
+        "Global"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,12diasderegalosdeitunes.gt",
+      "providers": [
+        "Apple",
+        "Global"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,12diasderegalosdeitunes.hn",
+      "providers": [
+        "Apple",
+        "Global"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,12diasderegalosdeitunes.pe",
+      "providers": [
+        "Apple",
+        "Global"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,12joursdecadeauxdeitunes.com",
+      "providers": [
+        "Apple",
+        "Global"
+      ]
+    },
+    {
       "rule": "DOMAIN-SUFFIX,1391.com",
       "providers": [
         "Reject",
         "Mainland"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,16.172.in-addr.arpa",
+      "providers": [
+        "LAN",
+        "Direct"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,168.192.in-addr.arpa",
+      "providers": [
+        "LAN",
+        "Direct"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,17.172.in-addr.arpa",
+      "providers": [
+        "LAN",
+        "Direct"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,18.172.in-addr.arpa",
+      "providers": [
+        "LAN",
+        "Direct"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,19.172.in-addr.arpa",
+      "providers": [
+        "LAN",
+        "Direct"
       ]
     },
     {
@@ -389,10 +729,31 @@
       ]
     },
     {
+      "rule": "DOMAIN-SUFFIX,1monsterbeatsbydreus.com",
+      "providers": [
+        "Apple",
+        "Global"
+      ]
+    },
+    {
       "rule": "DOMAIN-SUFFIX,1nmob.com",
       "providers": [
         "Reject",
         "Mainland"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,1to1computing.com.au",
+      "providers": [
+        "Apple",
+        "Global"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,1to1conference.com.au",
+      "providers": [
+        "Apple",
+        "Global"
       ]
     },
     {
@@ -407,6 +768,69 @@
       "providers": [
         "Reject",
         "MainlandMedia"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,20.172.in-addr.arpa",
+      "providers": [
+        "LAN",
+        "Direct"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,2013beatsbydrdreonline.com",
+      "providers": [
+        "Apple",
+        "Global"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,2013beatsbydrdreshop.com",
+      "providers": [
+        "Apple",
+        "Global"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,2013beatsbydreshop.com",
+      "providers": [
+        "Apple",
+        "Global"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,2013beatshdcybermonday.com",
+      "providers": [
+        "Apple",
+        "Global"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,2013cheapestbeats.com",
+      "providers": [
+        "Apple",
+        "Global"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,2013newbeatsworld.com",
+      "providers": [
+        "Apple",
+        "Global"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,2013pascherbeatsbydre.com",
+      "providers": [
+        "Apple",
+        "Global"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,2014cheapbeatsbydre.com",
+      "providers": [
+        "Apple",
+        "Global"
       ]
     },
     {
@@ -431,10 +855,59 @@
       ]
     },
     {
+      "rule": "DOMAIN-SUFFIX,21.172.in-addr.arpa",
+      "providers": [
+        "LAN",
+        "Direct"
+      ]
+    },
+    {
       "rule": "DOMAIN-SUFFIX,2144.com",
       "providers": [
         "Reject",
         "Mainland"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,22.172.in-addr.arpa",
+      "providers": [
+        "LAN",
+        "Direct"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,23.172.in-addr.arpa",
+      "providers": [
+        "LAN",
+        "Direct"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,24.172.in-addr.arpa",
+      "providers": [
+        "LAN",
+        "Direct"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,25.172.in-addr.arpa",
+      "providers": [
+        "LAN",
+        "Direct"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,254.169.in-addr.arpa",
+      "providers": [
+        "LAN",
+        "Direct"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,26.172.in-addr.arpa",
+      "providers": [
+        "LAN",
+        "Direct"
       ]
     },
     {
@@ -443,461 +916,9 @@
         "Mainland",
         "Google"
       ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,2mdn-cn.net",
-      "providers": [
-        "Reject",
-        "Google",
-        "Global"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,2mdn.net",
-      "providers": [
-        "Google",
-        "Global"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,365key.com",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,466453.com",
-      "providers": [
-        "Google",
-        "Global"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,4gtv.tv",
-      "providers": [
-        "GlobalMedia",
-        "Global"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,52112.com",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,5itv.tv",
-      "providers": [
-        "GlobalMedia",
-        "Global"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,a-msedge.net",
-      "providers": [
-        "Microsoft",
-        "Global"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,aadrm.com",
-      "providers": [
-        "Microsoft",
-        "Global"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,abc-studios.com",
-      "providers": [
-        "GlobalMedia",
-        "Global"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,abc.com",
-      "providers": [
-        "GlobalMedia",
-        "Global"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,abc.xyz",
-      "providers": [
-        "Google",
-        "Global"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,abema-tv.com",
-      "providers": [
-        "GlobalMedia",
-        "Global"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,abema.io",
-      "providers": [
-        "GlobalMedia",
-        "Global"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,abema.tv",
-      "providers": [
-        "GlobalMedia",
-        "Global"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,aboutamazon.com",
-      "providers": [
-        "GlobalMedia",
-        "Global"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,ac-pocketcamp.com",
-      "providers": [
-        "Game",
-        "Global"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,acm.org",
-      "providers": [
-        "LAN",
-        "Mainland"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,adaptivecards.io",
-      "providers": [
-        "Microsoft",
-        "Global"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,adgoogle.net",
-      "providers": [
-        "Google",
-        "Global"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,admeld.com",
-      "providers": [
-        "Google",
-        "Global"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,admob-cn.com",
-      "providers": [
-        "Google",
-        "Global"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,admob.com",
-      "providers": [
-        "Reject",
-        "Google"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,adobedtm.com",
-      "providers": [
-        "GlobalMedia",
-        "Global"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,ads-pixiv.net",
-      "providers": [
-        "Reject",
-        "Global"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,ads1.lfengmobile.com",
-      "providers": [
-        "Reject",
-        "MainlandMedia"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,adsame.com",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,adsense.com",
-      "providers": [
-        "Google",
-        "Global"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,adsensecustomsearchads.com",
-      "providers": [
-        "Reject",
-        "Google",
-        "Global"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,adsenseformobileapps.com",
-      "providers": [
-        "Google",
-        "Global"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,adsmogo.com",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,adsmogo.mobi",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,adsmogo.net",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,adtaipo.com",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,adtianmai.com",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,adventuresbydisney.com",
-      "providers": [
-        "GlobalMedia",
-        "Global"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,advertisercommunity.com",
-      "providers": [
-        "Reject",
-        "Google",
-        "Global"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,advertiserscommunity.com",
-      "providers": [
-        "Reject",
-        "Google",
-        "Global"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,adwep.com",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,adwords-community.com",
-      "providers": [
-        "Google",
-        "Global"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,adwords.com",
-      "providers": [
-        "Google",
-        "Global"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,adwordsexpress.com",
-      "providers": [
-        "Google",
-        "Global"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,adx.promo",
-      "providers": [
-        "GlobalMedia",
-        "Global"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,adxwork.com",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,afewmomentswith.com",
-      "providers": [
-        "GlobalMedia",
-        "Global"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,aflink.com",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,afp.com",
-      "providers": [
-        "GlobalMedia",
-        "Global"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,afp.pplive.com",
-      "providers": [
-        "Reject",
-        "MainlandMedia"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,afpforum.com",
-      "providers": [
-        "GlobalMedia",
-        "Global"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,aiv-cdn.net",
-      "providers": [
-        "GlobalMedia",
-        "Global"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,aiv-delivery.net",
-      "providers": [
-        "GlobalMedia",
-        "Global"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,aizhan.com",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,aka.ms",
-      "providers": [
-        "Microsoft",
-        "Global"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,akamaized.net",
-      "providers": [
-        "GlobalMedia",
-        "Global"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,akstat.io",
-      "providers": [
-        "Reject",
-        "Global"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,amazon-adsystem.com",
-      "providers": [
-        "Reject",
-        "Global"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,amazon.jobs",
-      "providers": [
-        "GlobalMedia",
-        "Global"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,amazonaws.co.uk",
-      "providers": [
-        "GlobalMedia",
-        "Global"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,amazonaws.com",
-      "providers": [
-        "GlobalMedia",
-        "Global"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,amazonprimevideos.com",
-      "providers": [
-        "GlobalMedia",
-        "Global"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,amazonvideo.cc",
-      "providers": [
-        "GlobalMedia",
-        "Global"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,amazonvideo.com",
-      "providers": [
-        "GlobalMedia",
-        "Global"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,ameba.jp",
-      "providers": [
-        "GlobalMedia",
-        "Global"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,amebame.com",
-      "providers": [
-        "GlobalMedia",
-        "Global"
-      ]
     }
   ],
-  "cross_provider_domain_coverages": 3681,
+  "cross_provider_domain_coverages": 3719,
   "domain_coverage_examples": [
     {
       "domain": "00-gov.cn",
@@ -1700,11 +1721,11 @@
       ]
     }
   ],
-  "workflow_sha256": "3b6ffd192612bb76f9bc36e2cf1566527dbb92f5f509945d58afab2d6cfff0c9",
+  "workflow_sha256": "868665b823abfa9d05757153ac68493208c43de597d6b1a83710455676af3202",
   "configured_sources": [
     "https://raw.githubusercontent.com/Coldvvater/Mononoke/refs/heads/master/Surge/Rules/AI.list",
     "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AdvertisingLite/AdvertisingLite_All_No_Resolve.list",
-    "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Apple/Apple.list",
+    "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Apple/Apple_All_No_Resolve.list",
     "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaMaxNoMedia/ChinaMaxNoMedia_All_No_Resolve.list",
     "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaMedia/ChinaMedia.list",
     "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Claude/Claude.list",
@@ -1716,8 +1737,10 @@
     "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Hijacking/Hijacking.list",
     "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Microsoft/Microsoft.list",
     "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list",
-    "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Privacy/Privacy_All.list",
+    "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Privacy/Privacy_All_No_Resolve.list",
     "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Telegram/Telegram.list",
+    "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/Direct/Direct.list",
+    "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/GitHub/GitHub.list",
     "https://ruleset.skk.moe/List/domainset/reject.conf",
     "https://ruleset.skk.moe/List/ip/lan.conf",
     "https://ruleset.skk.moe/List/ip/reject.conf",
