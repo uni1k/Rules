@@ -1,4 +1,5 @@
 import argparse
+import sys
 from pathlib import Path
 
 DOMAIN_TYPES = {'DOMAIN', 'DOMAIN-SUFFIX', 'DOMAIN-KEYWORD', 'URL-REGEX',
@@ -7,7 +8,7 @@ IP_TYPES = {'IP-CIDR', 'IP-CIDR6', 'SRC-IP-CIDR'}
 
 
 def split_provider(path: Path) -> tuple[list[str], list[str]]:
-    domain, ip, unsupported = [], [], []
+    domain, ip, skipped = [], [], []
     for line in path.read_text(encoding='utf-8').splitlines():
         rule_type = line.split(',', 1)[0]
         if rule_type in DOMAIN_TYPES:
@@ -15,10 +16,11 @@ def split_provider(path: Path) -> tuple[list[str], list[str]]:
         elif rule_type in IP_TYPES:
             ip.append(line)
         else:
-            unsupported.append(rule_type)
-    if unsupported:
-        raise ValueError(f'{path.name}: unclassified rule types: '
-                         f'{", ".join(sorted(set(unsupported)))}')
+            skipped.append(rule_type)
+    if skipped:
+        unique = sorted(set(skipped))
+        print(f'warning: {path.name}: skipped unsupported rule types: '
+              f'{", ".join(unique)}', file=sys.stderr)
     return domain, ip
 
 

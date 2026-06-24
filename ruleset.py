@@ -8,6 +8,8 @@ from io import StringIO
 from typing import Iterable
 from urllib.parse import urlparse
 
+import time
+
 import requests
 from ordered_set import OrderedSet
 from ruamel.yaml import YAML
@@ -28,6 +30,8 @@ SurgeRuleTypes = (
 LogicalRuleTypes = ('AND', 'OR', 'NOT')
 URL_SCHEMES = ('http', 'https', 'file')
 REQUEST_TIMEOUT = (5, 30)
+REQUEST_RETRIES = 3
+RETRY_BACKOFF = 2
 MAX_RULESET_DEPTH = 16
 
 
@@ -60,6 +64,26 @@ class RuleSet(OrderedSet):
         )
 
     @staticmethod
+    def _fetch_url_lines(url: str) -> list[str]:
+        """Fetch all lines from an HTTP(S) URL with retry."""
+        last_error = None
+        for attempt in range(REQUEST_RETRIES):
+            try:
+                with requests.get(url, stream=True, allow_redirects=True,
+                                  timeout=REQUEST_TIMEOUT) as response:
+                    response.raise_for_status()
+                    response.encoding = response.encoding or 'utf-8'
+                    return list(response.iter_lines(decode_unicode=True))
+            except requests.RequestException as error:
+                last_error = error
+                if attempt < REQUEST_RETRIES - 1:
+                    time.sleep(RETRY_BACKOFF ** attempt)
+        raise RuleError(
+            f'failed to fetch ruleset {url} after '
+            f'{REQUEST_RETRIES} attempts: {last_error}'
+        ) from last_error
+
+    @staticmethod
     def fetch_lines(*urls):
         for url in urls:
             parsed = urlparse(url)
@@ -73,14 +97,7 @@ class RuleSet(OrderedSet):
             if parsed.scheme not in ('http', 'https') or not parsed.netloc:
                 raise RuleError(f'unsupported ruleset URL: {url}')
 
-            try:
-                with requests.get(url, stream=True, allow_redirects=True,
-                                  timeout=REQUEST_TIMEOUT) as response:
-                    response.raise_for_status()
-                    response.encoding = response.encoding or 'utf-8'
-                    yield from response.iter_lines(decode_unicode=True)
-            except requests.RequestException as error:
-                raise RuleError(f'failed to fetch ruleset {url}: {error}') from error
+            yield from RuleSet._fetch_url_lines(url)
 
     @staticmethod
     def _is_domainset_url(url: str) -> bool:
@@ -190,11 +207,21 @@ def generate(sources: Iterable[str],
         rules.discard(exclusion)
 
     if is_clash:
+        payload = list(rules)
+        types = {r.split(',', 1)[0] for r in payload}
+        if types <= {'DOMAIN', 'DOMAIN-SUFFIX', 'DOMAIN-KEYWORD',
+                     'URL-REGEX', 'USER-AGENT'}:
+            behavior = 'domain'
+        elif types <= {'IP-CIDR', 'IP-CIDR6', 'SRC-IP-CIDR'}:
+            behavior = 'ipcidr'
+        else:
+            behavior = 'classical'
         with StringIO() as stream:
             yaml = YAML(typ='safe', pure=True)
             yaml.default_flow_style = False
             yaml.indent(mapping=2, sequence=4, offset=2)
-            yaml.dump({'payload': list(rules)}, stream)
+            yaml.dump({'type': 'file', 'behavior': behavior,
+                       'payload': payload}, stream)
             return stream.getvalue()
 
     return '\n'.join(rules) + ('\n' if rules else '')
@@ -206,6 +233,9 @@ def main():
                         help='rule or URL to include; repeat for multiple sources')
     parser.add_argument('-e', '--exclude', action='append', default=[],
                         help='rule or URL to exclude; repeat for multiple exclusions')
+    parser.add_argument('--exclude-file', action='append', default=[],
+                        metavar='PATH',
+                        help='local .list file whose rules are all excluded')
     parser.add_argument('-c', '--is-clash', action='store_true',
                         help='output Clash YAML instead of Surge rules')
     parser.add_argument('--force-no-resolve', action='store_true',
@@ -216,7 +246,11 @@ def main():
                         help='fail instead of ignoring unsupported rule types')
     args = parser.parse_args()
 
-    sys.stdout.write(generate(args.source, args.exclude, args.is_clash,
+    exclusions = list(args.exclude)
+    for path in args.exclude_file:
+        exclusions.append(f'file://{path}')
+
+    sys.stdout.write(generate(args.source, exclusions, args.is_clash,
                               args.force_no_resolve, args.include_comments,
                               args.strict))
 

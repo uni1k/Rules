@@ -1,8 +1,13 @@
+import tempfile
 import unittest
-from unittest.mock import patch
+from pathlib import Path
+from unittest.mock import MagicMock, patch
 
-from ruleset import (MAX_RULESET_DEPTH, REQUEST_TIMEOUT, RuleError, RuleSet,
-                     generate)
+import requests
+from ruamel.yaml import YAML
+
+from ruleset import (MAX_RULESET_DEPTH, REQUEST_RETRIES, REQUEST_TIMEOUT,
+                     RuleError, RuleSet, generate)
 
 
 class RuleSetTests(unittest.TestCase):
@@ -105,6 +110,56 @@ class RuleSetTests(unittest.TestCase):
                                         allow_redirects=True, timeout=REQUEST_TIMEOUT)
         self.assertEqual(response.encoding, 'utf-8')
         self.assertTrue(response.decode_unicode)
+
+    def test_http_fetch_retries_on_failure(self):
+        fail_response = MagicMock()
+        fail_response.__enter__ = MagicMock(return_value=fail_response)
+        fail_response.__exit__ = MagicMock(return_value=False)
+        fail_response.raise_for_status.side_effect = requests.RequestException(
+            'connection reset')
+
+        ok_response = MagicMock()
+        ok_response.__enter__ = MagicMock(return_value=ok_response)
+        ok_response.__exit__ = MagicMock(return_value=False)
+        ok_response.raise_for_status.return_value = None
+        ok_response.encoding = 'utf-8'
+        ok_response.iter_lines.return_value = iter(['DOMAIN,ok.com,Proxy'])
+
+        with patch('ruleset.requests.get',
+                   side_effect=[fail_response, ok_response]):
+            with patch('ruleset.time.sleep'):
+                result = list(RuleSet.fetch_lines('https://example.test/rules'))
+        self.assertEqual(result, ['DOMAIN,ok.com,Proxy'])
+
+    def test_clash_yaml_includes_type_and_behavior(self):
+        output = generate(['DOMAIN,example.com,Proxy',
+                           'DOMAIN-SUFFIX,example.org,Proxy'],
+                          is_clash=True)
+        yaml = YAML(typ='safe')
+        doc = yaml.load(output)
+        self.assertEqual(doc['type'], 'file')
+        self.assertEqual(doc['behavior'], 'domain')
+        self.assertIn('DOMAIN,example.com', doc['payload'])
+
+    def test_clash_yaml_behavior_ipcidr(self):
+        output = generate(['IP-CIDR,1.1.1.0/24,Proxy',
+                           'IP-CIDR6,2001:db8::/32,Proxy'],
+                          is_clash=True)
+        yaml = YAML(typ='safe')
+        doc = yaml.load(output)
+        self.assertEqual(doc['behavior'], 'ipcidr')
+
+    def test_exclude_file_removes_rules(self):
+        with tempfile.NamedTemporaryFile(mode='w', suffix='.list',
+                                         delete=False) as f:
+            f.write('DOMAIN,remove.me,Proxy\nDOMAIN-SUFFIX,drop.this,Proxy\n')
+            exclude_path = f.name
+        result = generate(
+            ['DOMAIN,keep.me,Proxy', 'DOMAIN,remove.me,Proxy',
+             'DOMAIN-SUFFIX,drop.this,Proxy'],
+            exclusions=[f'file://{exclude_path}'],
+        )
+        self.assertEqual(result, 'DOMAIN,keep.me\n')
 
 
 if __name__ == '__main__':

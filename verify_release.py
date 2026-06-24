@@ -9,25 +9,22 @@ from ruamel.yaml import YAML
 from ruleset import RuleSet
 
 EXPECTED = {
-    'AI', 'Apple', 'AppleCDN', 'AppleCN', 'CDN', 'China', 'Direct',
-    'Download', 'Global', 'LAN', 'Media', 'MediaCN', 'Microsoft', 'MicrosoftCDN',
-    'Reject', 'RejectDrop', 'RejectNoDrop',
-    'Speedtest', 'Steam', 'Telegram', 'iCloudPrivateRelay',
+    'LAN', 'AI', 'Telegram',
+    'Global', 'GlobalMedia', 'Mainland', 'MainlandMedia',
+    'Game', 'Apple', 'Microsoft', 'Google', 'Reject',
 }
 
 # Earlier entries have higher matching priority when consumers combine providers.
 PRIORITY = [
-    'Reject', 'RejectDrop', 'RejectNoDrop', 'LAN', 'Direct',
-    'AppleCN', 'AppleCDN', 'MicrosoftCDN', 'China', 'GamesCN', 'Download',
-    'CDN', 'Speedtest', 'MediaCN', 'Media', 'Apple', 'Microsoft', 'AI',
-    'Telegram', 'Global', 'Steam', 'iCloudPrivateRelay',
+    'Reject', 'LAN', 'MainlandMedia', 'GlobalMedia',
+    'Apple', 'Microsoft', 'AI', 'Telegram',
+    'Mainland', 'Google', 'Game', 'Global',
 ]
 CLASH_TYPES = {
     'DOMAIN', 'DOMAIN-SUFFIX', 'DOMAIN-KEYWORD', 'IP-CIDR', 'IP-CIDR6',
     'SRC-IP-CIDR', 'DST-PORT', 'SRC-PORT',
 }
-MINIMUM_RULES = {'Reject': 50_000, 'China': 1_000, 'Global': 1_000,
-                 'CDN': 1_000, 'Speedtest': 1_000}
+MINIMUM_RULES = {'Reject': 50_000, 'China': 1_000, 'Global': 1_000}
 
 
 def read_lines(path: Path) -> list[str]:

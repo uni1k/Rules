@@ -38,169 +38,91 @@ jobs:
       - name: Test Generator
         run: python -m unittest discover -s tests -v
 
-      - name: Generate Apple Rule
+      # ---- Phase 1: generate exclusion sources first ----
+
+      - name: Generate MainlandMedia Rule
         run: |
           python ruleset.py \
-            --source https://raw.githubusercontent.com/dler-io/Rules/master/Surge/Surge%203/Provider/Apple.list        \
-            --source https://ruleset.skk.moe/List/non_ip/apple_services.conf \
-            --source https://ruleset.skk.moe/List/ip/apple_services.conf \
-            > Apple.list
+            --source https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaMedia/ChinaMedia.list \
+            > MainlandMedia.list
 
-      - name: Generate Apple China Rule
+      - name: Generate GlobalMedia Rule
         run: |
           python ruleset.py \
-            --source https://ruleset.skk.moe/List/non_ip/apple_cn.conf \
-            > AppleCN.list
+            --source https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/GlobalMedia/GlobalMedia_All.list \
+            > GlobalMedia.list
 
-      - name: Generate Apple CDN Rule
+      - name: Generate Google Rule
         run: |
           python ruleset.py \
-            --source https://ruleset.skk.moe/List/domainset/apple_cdn.conf \
-            > AppleCDN.list
+            --source https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Google/Google.list \
+            > Google.list
 
-      - name: Generate China Rule
-        run: |
-          # --source https://www.naiixi.com/Extra_CN.list
-          # --source https://www.naiixi.com/Extra_CN_2.list
-          python ruleset.py \
-            --source https://raw.githubusercontent.com/Coldvvater/Mononoke/refs/heads/master/Surge/Rules/ChinaDomain.list \
-            --source https://raw.githubusercontent.com/nexitallyy/ProxyRules/main/Extra_CN_3.list \
-            --source https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list \
-            --source https://ruleset.skk.moe/List/non_ip/domestic.conf \
-            --source https://ruleset.skk.moe/List/ip/domestic.conf \
-            --source https://ruleset.skk.moe/List/ip/china_ip.conf \
-            --source https://ruleset.skk.moe/List/ip/china_ip_ipv6.conf \
-            --exclude DOMAIN-SUFFIX,cn \
-            --exclude DOMAIN-SUFFIX,ip.sb \
-            > China.list
+      # ---- Phase 2: generate final providers ----
 
-      - name: Generate Global Rule
-        run: |
-          python ruleset.py \
-            --source https://raw.githubusercontent.com/Coldvvater/Mononoke/refs/heads/master/Surge/Rules/Proxy.list \
-            --source https://raw.githubusercontent.com/Coldvvater/Mononoke/refs/heads/master/Surge/Rules/ProxyGFW.list \
-            --source https://ruleset.skk.moe/List/non_ip/global.conf \
-            --source DOMAIN-SUFFIX,cathaypacific.com \
-            --source DOMAIN-SUFFIX,asiamiles.com \
-            > Global.list
-
-      - name: Generate Media Rule
-        run: |
-          python ruleset.py \
-            --source https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Netflix/Netflix.list                   \
-            --source https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Disney/Disney.list                     \
-            --source https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/TikTok/TikTok.list                     \
-            --source https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AmazonPrimeVideo/AmazonPrimeVideo.list \
-            --source https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/YouTube/YouTube.list                   \
-            --source https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/YouTubeMusic/YouTubeMusic.list         \
-            --source https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/HBO/HBO.list                           \
-            --source https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Hulu/Hulu.list                         \
-            --source https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Twitch/Twitch.list                     \
-            --source https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Spotify/Spotify.list                   \
-            --source https://ruleset.skk.moe/List/non_ip/stream.conf \
-            --source https://ruleset.skk.moe/List/ip/stream.conf \
-            > Media.list
-
-      - name: Generate MediaCN Rule
-        run: |
-          python ruleset.py \
-            --source https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Media/Bilibili.list               \
-            --source https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Media/IQIYI.list                  \
-            --source https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/NetEaseMusic/NetEaseMusic.list \
-            --source https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/TencentVideo/TencentVideo.list \
-            --source https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Youku/Youku.list               \
-            --source https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Sohu/Sohu.list                 \
-            --source https://ruleset.skk.moe/List/non_ip/neteasemusic.conf \
-            > MediaCN.list
-
-      - name: Generate AI Rule
-        run: |
-          python ruleset.py \
-            --source https://raw.githubusercontent.com/Coldvvater/Mononoke/refs/heads/master/Surge/Rules/AI.list \
-            --source https://ruleset.skk.moe/List/non_ip/ai.conf \
-            > AI.list
-
-      - name: Generate Microsoft Rule
-        run: |
-          python ruleset.py \
-            --source https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Microsoft/Microsoft.list  \
-            --source https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Teams/Teams.list          \
-            --source https://ruleset.skk.moe/List/non_ip/microsoft.conf \
-            > Microsoft.list
-
-      - name: Generate Microsoft CDN Rule
-        run: |
-          python ruleset.py \
-            --source https://ruleset.skk.moe/List/non_ip/microsoft_cdn.conf \
-            > MicrosoftCDN.list
-
-      - name: Generate Reject Rule
-        run: |
-          python ruleset.py --force-no-resolve \
-            --source https://raw.githubusercontent.com/dler-io/Rules/refs/heads/main/Surge/Surge%203/Provider/AdBlock.list \
-            --source https://ruleset.skk.moe/List/domainset/reject.conf \
-            --source https://ruleset.skk.moe/List/non_ip/reject.conf \
-            --source https://ruleset.skk.moe/List/ip/reject.conf \
-            > Reject.list
-
-      - name: Generate Supplemental Reject Rules
-        run: |
-          python ruleset.py \
-            --source https://ruleset.skk.moe/List/non_ip/reject-drop.conf \
-            > RejectDrop.list
-          python ruleset.py \
-            --source https://ruleset.skk.moe/List/non_ip/reject-no-drop.conf \
-            > RejectNoDrop.list
-
-      - name: Generate CDN Rule
-        run: |
-          python ruleset.py \
-            --source https://ruleset.skk.moe/List/domainset/cdn.conf \
-            --source https://ruleset.skk.moe/List/non_ip/cdn.conf \
-            > CDN.list
-
-      - name: Generate Download Rule
-        run: |
-          python ruleset.py \
-            --source https://ruleset.skk.moe/List/domainset/download.conf \
-            --source https://ruleset.skk.moe/List/non_ip/download.conf \
-            > Download.list
-
-      - name: Generate Speedtest Rule
-        run: |
-          python ruleset.py \
-            --source https://ruleset.skk.moe/List/domainset/speedtest.conf \
-            > Speedtest.list
-
-      - name: Generate iCloud Private Relay Rule
-        run: |
-          python ruleset.py \
-            --source https://ruleset.skk.moe/List/domainset/icloud_private_relay.conf \
-            > iCloudPrivateRelay.list
-
-      - name: Generate Direct and LAN Rules
+      - name: Generate LAN Rule
         run: |
           python ruleset.py \
             --source https://ruleset.skk.moe/List/non_ip/direct.conf \
-            > Direct.list
-          python ruleset.py \
             --source https://ruleset.skk.moe/List/non_ip/lan.conf \
             --source https://ruleset.skk.moe/List/ip/lan.conf \
             > LAN.list
 
-      - name: Generate Steam Rule
+      - name: Generate AI Rule
         run: |
           python ruleset.py \
-            --source https://raw.githubusercontent.com/dler-io/Rules/master/Surge/Surge%203/Provider/Steam.list \
-            > Steam.list
+            --source https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list \
+            --source https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Claude/Claude.list \
+            --source https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Gemini/Gemini.list \
+            > AI.list
+
 
       - name: Generate Telegram Rule
         run: |
           python ruleset.py \
-            --source https://raw.githubusercontent.com/dler-io/Rules/master/Surge/Surge%203/Provider/Telegram.list           \
-            --source https://ruleset.skk.moe/List/non_ip/telegram.conf \
-            --source https://ruleset.skk.moe/List/ip/telegram.conf \
+            --source https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Telegram/Telegram.list \
             > Telegram.list
+
+      - name: Generate Apple Rule
+        run: |
+          python ruleset.py \
+            --source https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Apple/Apple.list \
+            > Apple.list
+
+      - name: Generate Microsoft Rule
+        run: |
+          python ruleset.py \
+            --source https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Microsoft/Microsoft.list \
+            > Microsoft.list
+
+      - name: Generate Mainland Rule
+        run: |
+          python ruleset.py \
+            --source https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaMaxNoMedia/ChinaMaxNoMedia_All.list \
+            > Mainland.list
+
+      - name: Generate Global Rule
+        run: |
+          python ruleset.py \
+            --source https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Global/Global_All.list \
+            > Global.list
+
+      - name: Generate Game Rule
+        run: |
+          python ruleset.py \
+            --source https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Game/Game.list \
+            > Game.list
+
+      - name: Generate Reject Rule
+        run: |
+          python ruleset.py --force-no-resolve \
+            --source https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AdvertisingLite/AdvertisingLite_All.list \
+            --source https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Hijacking/Hijacking.list \
+            --source https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Privacy/Privacy_All.list \
+            --source https://ruleset.skk.moe/List/non_ip/reject.conf \
+            --source https://ruleset.skk.moe/List/ip/reject.conf \
+            --source https://ruleset.skk.moe/List/domainset/reject.conf \
+            > Reject.list
 
       - name: Convert Clash Rules
         run: |
