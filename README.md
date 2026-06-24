@@ -32,16 +32,15 @@ Sukka `List/domainset` sources are also accepted: `.example.com` entries are
 converted to `DOMAIN-SUFFIX,example.com`, while exact host entries become
 `DOMAIN` rules.
 
-## Provider tiers
+## Release artifacts
 
-Each release retains the compatibility provider (for example, `Media.list`) and
-also emits non-empty `MediaDomain` and `MediaIP` providers. The domain tier
-contains domain, URL, and process rules; the IP tier contains CIDR rules. Keep
-the original order within each tier, reference all `*Domain` providers before
-all `*IP` providers, and place `MATCH`/`FINAL` last. `Surge/manifest.json`
-contains the exact recommended order and overlap audit for each release.
-Use either a compatibility provider or its tiered providers, never both in the
-same policy chain.
+Each release publishes one Surge provider and one Clash provider per ruleset:
+
+- `Surge/<Name>.list`
+- `Clash/<Name>.yaml`
+
+`Surge/manifest.json` records the recommended provider order plus the duplicate
+and overlap audit for the published base providers.
 
 ## Development
 

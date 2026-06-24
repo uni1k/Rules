@@ -40,26 +40,13 @@ def checksum(path: Path) -> str:
 
 def audit(directory: Path) -> dict:
     all_lists = {path.stem: path for path in directory.glob('*.list')}
-    lists = {name: path for name, path in all_lists.items()
-             if not name.endswith(('Domain', 'IP'))}
-    missing = EXPECTED - lists.keys()
-    unexpected = lists.keys() - EXPECTED
+    missing = EXPECTED - all_lists.keys()
+    unexpected = all_lists.keys() - EXPECTED
     if missing or unexpected:
         raise ValueError(f'provider set mismatch: missing={sorted(missing)} '
                          f'unexpected={sorted(unexpected)}')
 
-    base_lines = {name: read_lines(path) for name, path in lists.items()}
-    expected_split = set(lists)
-    for name, lines in base_lines.items():
-        types = {line.split(',', 1)[0] for line in lines}
-        if types & {'DOMAIN', 'DOMAIN-SUFFIX', 'DOMAIN-KEYWORD', 'URL-REGEX',
-                    'PROCESS-NAME', 'USER-AGENT'}:
-            expected_split.add(f'{name}Domain')
-        if types & {'IP-CIDR', 'IP-CIDR6', 'SRC-IP-CIDR'}:
-            expected_split.add(f'{name}IP')
-    if all_lists.keys() != expected_split:
-        raise ValueError(f'tiered provider mismatch: missing={sorted(expected_split - all_lists.keys())} '
-                         f'unexpected={sorted(all_lists.keys() - expected_split)}')
+    base_lines = {name: read_lines(path) for name, path in all_lists.items()}
 
     yaml = YAML(typ='safe')
     providers, ownership = {}, defaultdict(list)
@@ -116,9 +103,7 @@ def audit(directory: Path) -> dict:
     return {
         'provider_priority': PRIORITY,
         'recommended_order': {
-            'domain_and_application': [f'{name}Domain' for name in PRIORITY
-                                       if f'{name}Domain' in all_lists],
-            'ip': [f'{name}IP' for name in PRIORITY if f'{name}IP' in all_lists],
+            'providers': [name for name in PRIORITY if name in all_lists],
         },
         'providers': providers,
         'cross_provider_exact_duplicates': len(duplicates),

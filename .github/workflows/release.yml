@@ -126,7 +126,6 @@ jobs:
 
       - name: Convert Clash Rules
         run: |
-          python split_providers.py --directory .
           for rule in *.list
           do
             python ruleset.py -c -s "file://$PWD/$rule" > "${rule%.*}.yaml"
