@@ -1,3 +1,4 @@
+behavior: ipcidr
 payload:
   - IP-CIDR,0.0.0.0/8
   - IP-CIDR,10.0.0.0/8
@@ -10,3 +11,4 @@ payload:
   - IP-CIDR6,::1/128
   - IP-CIDR6,fc00::/7
   - IP-CIDR6,fe80::/10
+type: file
