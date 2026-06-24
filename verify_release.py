@@ -9,16 +9,16 @@ from ruamel.yaml import YAML
 from ruleset import RuleSet
 
 EXPECTED = {
-    'LAN', 'AI', 'Telegram',
+    'LAN', 'Direct', 'AI', 'Telegram',
     'Global', 'GlobalMedia', 'Mainland', 'MainlandMedia',
-    'Game', 'Apple', 'Microsoft', 'Google', 'Reject',
+    'Game', 'GitHub', 'Apple', 'Microsoft', 'Google', 'Reject',
 }
 
 # Earlier entries have higher matching priority when consumers combine providers.
 PRIORITY = [
-    'Reject', 'LAN', 'MainlandMedia', 'GlobalMedia',
+    'Reject', 'LAN', 'Direct', 'MainlandMedia', 'GlobalMedia',
     'Apple', 'Microsoft', 'AI', 'Telegram',
-    'Mainland', 'Google', 'Game', 'Global',
+    'Mainland', 'Google', 'GitHub', 'Game', 'Global',
 ]
 CLASH_TYPES = {
     'DOMAIN', 'DOMAIN-SUFFIX', 'DOMAIN-KEYWORD', 'IP-CIDR', 'IP-CIDR6',

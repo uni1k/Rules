@@ -63,10 +63,16 @@ jobs:
       - name: Generate LAN Rule
         run: |
           python ruleset.py \
-            --source https://ruleset.skk.moe/List/non_ip/direct.conf \
             --source https://ruleset.skk.moe/List/non_ip/lan.conf \
             --source https://ruleset.skk.moe/List/ip/lan.conf \
             > LAN.list
+
+      - name: Generate Direct Rule
+        run: |
+          python ruleset.py \
+            --source https://ruleset.skk.moe/List/non_ip/direct.conf \
+            --source https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/Direct/Direct.list \
+            > Direct.list
 
       - name: Generate AI Rule
         run: |
@@ -88,7 +94,7 @@ jobs:
       - name: Generate Apple Rule
         run: |
           python ruleset.py \
-            --source https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Apple/Apple.list \
+            --source https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Apple/Apple_All_No_Resolve.list \
             > Apple.list
 
       - name: Generate Microsoft Rule
@@ -115,12 +121,18 @@ jobs:
             --source https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Game/Game.list \
             > Game.list
 
+      - name: Generate GitHub Rule
+        run: |
+          python ruleset.py \
+            --source https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/GitHub/GitHub.list \
+            > GitHub.list
+
       - name: Generate Reject Rule
         run: |
           python ruleset.py --force-no-resolve \
             --source https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AdvertisingLite/AdvertisingLite_All_No_Resolve.list \
             --source https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Hijacking/Hijacking.list \
-            --source https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Privacy/Privacy_All.list \
+            --source https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Privacy/Privacy_All_No_Resolve.list \
             --source https://ruleset.skk.moe/List/non_ip/reject.conf \
             --source https://ruleset.skk.moe/List/ip/reject.conf \
             --source https://ruleset.skk.moe/List/domainset/reject.conf \
