@@ -187,17 +187,17 @@
       "sha256": "a8b516163e1c07149d8bc7162f2edf65596c1a189feea09bed312dc8ad05c56b"
     },
     "Reject": {
-      "rules": 164041,
-      "clash_rules": 164036,
+      "rules": 164201,
+      "clash_rules": 164196,
       "types": {
         "DOMAIN": 24788,
         "DOMAIN-KEYWORD": 334,
-        "DOMAIN-SUFFIX": 137956,
+        "DOMAIN-SUFFIX": 138116,
         "IP-CIDR": 952,
         "IP-CIDR6": 6,
         "URL-REGEX": 5
       },
-      "sha256": "a8f59d8fc44a30646b75dbd0777535eae1d4abdb038abdad74aa46dec162a778"
+      "sha256": "5f6ccdbbd32243a58a5d5bfbb5fe34bd2e46ad9b7b6bc10c4ef92544604a92cd"
     },
     "Telegram": {
       "rules": 40,
