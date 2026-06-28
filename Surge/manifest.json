@@ -81,7 +81,7 @@
         "DOMAIN-SUFFIX": 539,
         "IP-CIDR": 46
       },
-      "sha256": "9f9ceccff852cda862499a6fad8d251f795bd64e2083361dcdcee86a0e61f3e7"
+      "sha256": "5f2997a92425e425fc8d92012562a7fa774341e75032c5d55dba1cfe70c8207f"
     },
     "GitHub": {
       "rules": 31,
@@ -93,18 +93,18 @@
       "sha256": "95299a16144b19c5ff24298c6ba2ab731dc05b99c22340b566408cedf71124ea"
     },
     "Global": {
-      "rules": 34801,
-      "clash_rules": 34754,
+      "rules": 34813,
+      "clash_rules": 34766,
       "types": {
-        "DOMAIN": 126,
+        "DOMAIN": 125,
         "DOMAIN-KEYWORD": 36,
-        "DOMAIN-SUFFIX": 34476,
+        "DOMAIN-SUFFIX": 34489,
         "IP-CIDR": 112,
         "IP-CIDR6": 4,
         "PROCESS-NAME": 1,
         "USER-AGENT": 46
       },
-      "sha256": "d67a1db610c076840aa25b948200ab72c2e8ca933aa147bb2fc4ee5bd5fdf1a2"
+      "sha256": "aa8499e07e6b4a2eb541551489df32fd2b167e84773b6a5e9573af180c482e30"
     },
     "GlobalMedia": {
       "rules": 2335,
@@ -119,7 +119,7 @@
         "URL-REGEX": 1,
         "USER-AGENT": 69
       },
-      "sha256": "2f6cee1ea0d6b5556b2011ba5efb94d1d461e25981b9bad8b96d811048d35a46"
+      "sha256": "c26170f6a33a3c25fd229ac71b8e1dd549b324be4aab16880a7809ede6e409bc"
     },
     "Google": {
       "rules": 703,
@@ -147,18 +147,18 @@
       "sha256": "815e24206d8e95ddd1272fa2031f6f3481a78b14e35115ad66a8f1cf14205650"
     },
     "Mainland": {
-      "rules": 124593,
-      "clash_rules": 124516,
+      "rules": 124537,
+      "clash_rules": 124460,
       "types": {
         "DOMAIN": 288,
         "DOMAIN-KEYWORD": 11,
-        "DOMAIN-SUFFIX": 111825,
-        "IP-CIDR": 8256,
-        "IP-CIDR6": 4136,
+        "DOMAIN-SUFFIX": 111772,
+        "IP-CIDR": 8262,
+        "IP-CIDR6": 4127,
         "PROCESS-NAME": 12,
         "USER-AGENT": 65
       },
-      "sha256": "24cbc83649271e3732560eb85dc1afb65c462f0d4709de2060540cece453305a"
+      "sha256": "4a2ad188dafee644583e5d0f04214a89931523dbbcc20db30b46005d6e426d05"
     },
     "MainlandMedia": {
       "rules": 446,
@@ -187,17 +187,17 @@
       "sha256": "a8b516163e1c07149d8bc7162f2edf65596c1a189feea09bed312dc8ad05c56b"
     },
     "Reject": {
-      "rules": 164201,
-      "clash_rules": 164196,
+      "rules": 164372,
+      "clash_rules": 164367,
       "types": {
         "DOMAIN": 24788,
         "DOMAIN-KEYWORD": 334,
-        "DOMAIN-SUFFIX": 138116,
+        "DOMAIN-SUFFIX": 138287,
         "IP-CIDR": 952,
         "IP-CIDR6": 6,
         "URL-REGEX": 5
       },
-      "sha256": "5f6ccdbbd32243a58a5d5bfbb5fe34bd2e46ad9b7b6bc10c4ef92544604a92cd"
+      "sha256": "f27696de772f0ef610eec5a5f312f0b369e70fff61b5a869987e82b47653569e"
     },
     "Telegram": {
       "rules": 40,
@@ -213,7 +213,7 @@
       "sha256": "70cef2ac856e8eb547e3b61171f68d3a957f373139b6e42666b8b784a2c63511"
     }
   },
-  "cross_provider_exact_duplicates": 4510,
+  "cross_provider_exact_duplicates": 4512,
   "duplicate_examples": [
     {
       "rule": "DOMAIN,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe",
@@ -918,7 +918,7 @@
       ]
     }
   ],
-  "cross_provider_domain_coverages": 3719,
+  "cross_provider_domain_coverages": 3718,
   "domain_coverage_examples": [
     {
       "domain": "00-gov.cn",
