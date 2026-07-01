@@ -44,7 +44,7 @@
         "IP-CIDR": 2,
         "URL-REGEX": 1
       },
-      "sha256": "f3fba4a77c26cbbd00b1275281c3d6e9211ba8b77347ba90b277e4e50c9ad05f"
+      "sha256": "30f33e32f07f31e8e95e38f6e9946202e22d73d1fbf2baa440a4a2006fe67b34"
     },
     "Apple": {
       "rules": 1616,
@@ -58,7 +58,7 @@
         "PROCESS-NAME": 13,
         "USER-AGENT": 23
       },
-      "sha256": "f96a94988d09a14ac151278a27eead804489cb66abd11027ea0fe89c92b2555b"
+      "sha256": "ebbac3f3114fab3eb1dd85f32894cb96160cc63fb744371b1d2789d71b0c310a"
     },
     "Direct": {
       "rules": 335,
@@ -70,7 +70,7 @@
         "PROCESS-NAME": 39,
         "USER-AGENT": 1
       },
-      "sha256": "1de51995e61256a07cf9fcb284e35a78608ec8ea30ec300ab4f95866770cc737"
+      "sha256": "708f6b9af725383b968ff1307c5e325ab7f6f54c587cc38903cda93e7d6e0d91"
     },
     "Game": {
       "rules": 597,
@@ -81,7 +81,7 @@
         "DOMAIN-SUFFIX": 539,
         "IP-CIDR": 46
       },
-      "sha256": "5f2997a92425e425fc8d92012562a7fa774341e75032c5d55dba1cfe70c8207f"
+      "sha256": "76a4cb4a31016617e2738b268908daea3343c848534f62b2840a1789c4515576"
     },
     "GitHub": {
       "rules": 31,
@@ -93,18 +93,18 @@
       "sha256": "95299a16144b19c5ff24298c6ba2ab731dc05b99c22340b566408cedf71124ea"
     },
     "Global": {
-      "rules": 34813,
-      "clash_rules": 34766,
+      "rules": 34832,
+      "clash_rules": 34785,
       "types": {
         "DOMAIN": 125,
         "DOMAIN-KEYWORD": 36,
-        "DOMAIN-SUFFIX": 34489,
+        "DOMAIN-SUFFIX": 34508,
         "IP-CIDR": 112,
         "IP-CIDR6": 4,
         "PROCESS-NAME": 1,
         "USER-AGENT": 46
       },
-      "sha256": "aa8499e07e6b4a2eb541551489df32fd2b167e84773b6a5e9573af180c482e30"
+      "sha256": "3d6402911651ac701b83f74fe3a73129f529caf31548f1462345b0bf1c415370"
     },
     "GlobalMedia": {
       "rules": 2335,
@@ -119,7 +119,7 @@
         "URL-REGEX": 1,
         "USER-AGENT": 69
       },
-      "sha256": "c26170f6a33a3c25fd229ac71b8e1dd549b324be4aab16880a7809ede6e409bc"
+      "sha256": "2f6cee1ea0d6b5556b2011ba5efb94d1d461e25981b9bad8b96d811048d35a46"
     },
     "Google": {
       "rules": 703,
@@ -144,21 +144,21 @@
         "IP-CIDR": 8,
         "IP-CIDR6": 3
       },
-      "sha256": "815e24206d8e95ddd1272fa2031f6f3481a78b14e35115ad66a8f1cf14205650"
+      "sha256": "0a01a43f609f5fe80763ab5c36f7175d451a3bf2d58834bd05e9253c745ab7eb"
     },
     "Mainland": {
-      "rules": 124537,
-      "clash_rules": 124460,
+      "rules": 124572,
+      "clash_rules": 124495,
       "types": {
         "DOMAIN": 288,
         "DOMAIN-KEYWORD": 11,
-        "DOMAIN-SUFFIX": 111772,
+        "DOMAIN-SUFFIX": 111806,
         "IP-CIDR": 8262,
-        "IP-CIDR6": 4127,
+        "IP-CIDR6": 4128,
         "PROCESS-NAME": 12,
         "USER-AGENT": 65
       },
-      "sha256": "4a2ad188dafee644583e5d0f04214a89931523dbbcc20db30b46005d6e426d05"
+      "sha256": "bfdd47a384f662a4245a108cad77a9d458eab5ec518d261d095634d188f6dfeb"
     },
     "MainlandMedia": {
       "rules": 446,
@@ -187,17 +187,17 @@
       "sha256": "a8b516163e1c07149d8bc7162f2edf65596c1a189feea09bed312dc8ad05c56b"
     },
     "Reject": {
-      "rules": 164372,
-      "clash_rules": 164367,
+      "rules": 162754,
+      "clash_rules": 162749,
       "types": {
-        "DOMAIN": 24788,
-        "DOMAIN-KEYWORD": 334,
-        "DOMAIN-SUFFIX": 138287,
+        "DOMAIN": 24791,
+        "DOMAIN-KEYWORD": 335,
+        "DOMAIN-SUFFIX": 136665,
         "IP-CIDR": 952,
         "IP-CIDR6": 6,
         "URL-REGEX": 5
       },
-      "sha256": "f27696de772f0ef610eec5a5f312f0b369e70fff61b5a869987e82b47653569e"
+      "sha256": "b03620bc5e2720d42743cccd9a53cb2bddae9fd3772108676267ec83c03667a2"
     },
     "Telegram": {
       "rules": 40,
@@ -213,7 +213,7 @@
       "sha256": "70cef2ac856e8eb547e3b61171f68d3a957f373139b6e42666b8b784a2c63511"
     }
   },
-  "cross_provider_exact_duplicates": 4512,
+  "cross_provider_exact_duplicates": 4515,
   "duplicate_examples": [
     {
       "rule": "DOMAIN,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe",
@@ -918,7 +918,7 @@
       ]
     }
   ],
-  "cross_provider_domain_coverages": 3718,
+  "cross_provider_domain_coverages": 3721,
   "domain_coverage_examples": [
     {
       "domain": "00-gov.cn",
