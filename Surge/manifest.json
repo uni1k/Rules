@@ -58,7 +58,7 @@
         "PROCESS-NAME": 13,
         "USER-AGENT": 23
       },
-      "sha256": "6d3a41acd7956a012d27f318e13cc66a76febaae7e72c89778d2cea4933556bd"
+      "sha256": "cfec6ffe0886e7e1251de7989e869f1086d738ddff87860bd390f690c1dc2e63"
     },
     "Direct": {
       "rules": 335,
@@ -81,7 +81,7 @@
         "DOMAIN-SUFFIX": 539,
         "IP-CIDR": 46
       },
-      "sha256": "6254d5a9114e4282407655191ac3a81cbd617adab5f55d516936318fbdc5831c"
+      "sha256": "fd480d9203afd991c6a953ec350465f50fdef9ac70ee4fc3db1a4b08592379c1"
     },
     "GitHub": {
       "rules": 31,
@@ -93,18 +93,18 @@
       "sha256": "95299a16144b19c5ff24298c6ba2ab731dc05b99c22340b566408cedf71124ea"
     },
     "Global": {
-      "rules": 34857,
-      "clash_rules": 34810,
+      "rules": 34889,
+      "clash_rules": 34842,
       "types": {
-        "DOMAIN": 124,
+        "DOMAIN": 128,
         "DOMAIN-KEYWORD": 36,
-        "DOMAIN-SUFFIX": 34534,
+        "DOMAIN-SUFFIX": 34562,
         "IP-CIDR": 112,
         "IP-CIDR6": 4,
         "PROCESS-NAME": 1,
         "USER-AGENT": 46
       },
-      "sha256": "15cbf5be3acbc77b9f25b1ebdc1dbbd8a113ac8e3a21d94b933825b36fc5cab0"
+      "sha256": "68a09c1876827cc5a9aec0b4554b2f49a920a6a536327804cad12fccdf5709da"
     },
     "GlobalMedia": {
       "rules": 2335,
@@ -119,7 +119,7 @@
         "URL-REGEX": 1,
         "USER-AGENT": 69
       },
-      "sha256": "c26170f6a33a3c25fd229ac71b8e1dd549b324be4aab16880a7809ede6e409bc"
+      "sha256": "2f6cee1ea0d6b5556b2011ba5efb94d1d461e25981b9bad8b96d811048d35a46"
     },
     "Google": {
       "rules": 703,
@@ -147,18 +147,18 @@
       "sha256": "0a01a43f609f5fe80763ab5c36f7175d451a3bf2d58834bd05e9253c745ab7eb"
     },
     "Mainland": {
-      "rules": 124387,
-      "clash_rules": 124310,
+      "rules": 124247,
+      "clash_rules": 124170,
       "types": {
-        "DOMAIN": 291,
+        "DOMAIN": 293,
         "DOMAIN-KEYWORD": 11,
-        "DOMAIN-SUFFIX": 111592,
-        "IP-CIDR": 8248,
-        "IP-CIDR6": 4168,
+        "DOMAIN-SUFFIX": 111397,
+        "IP-CIDR": 8254,
+        "IP-CIDR6": 4215,
         "PROCESS-NAME": 12,
         "USER-AGENT": 65
       },
-      "sha256": "937ac556e7dd94cf912e5454486ca7d71571f5deec928f5c6563d5c45d7ad93d"
+      "sha256": "447cb9988fb9ff236754c821fc8612df34565a5c30685aa29dcf88139caf0f1d"
     },
     "MainlandMedia": {
       "rules": 446,
@@ -187,17 +187,17 @@
       "sha256": "a8b516163e1c07149d8bc7162f2edf65596c1a189feea09bed312dc8ad05c56b"
     },
     "Reject": {
-      "rules": 163432,
-      "clash_rules": 163427,
+      "rules": 163610,
+      "clash_rules": 163605,
       "types": {
-        "DOMAIN": 24791,
+        "DOMAIN": 24788,
         "DOMAIN-KEYWORD": 335,
-        "DOMAIN-SUFFIX": 137344,
+        "DOMAIN-SUFFIX": 137525,
         "IP-CIDR": 951,
         "IP-CIDR6": 6,
         "URL-REGEX": 5
       },
-      "sha256": "b8045d39bed3103f66dd06d9dcf7ee8f19017aa2253fea8e179586eb5486f1ea"
+      "sha256": "f2811399fc57b9eeef42f2539d8ebabef2e5ad11e4a551c920adf2bf3b56a82f"
     },
     "Telegram": {
       "rules": 40,
@@ -920,6 +920,35 @@
   ],
   "cross_provider_domain_coverages": 3723,
   "domain_coverage_examples": [
+    {
+      "domain": "7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe",
+      "suffix": "skk.moe",
+      "providers": [
+        "Reject",
+        "LAN",
+        "Direct",
+        "AI",
+        "Global"
+      ]
+    },
+    {
+      "domain": "router.asus.com",
+      "suffix": "asus.com",
+      "providers": [
+        "LAN",
+        "Direct",
+        "Global"
+      ]
+    },
+    {
+      "domain": "repeater.asus.com",
+      "suffix": "asus.com",
+      "providers": [
+        "LAN",
+        "Direct",
+        "Global"
+      ]
+    },
     {
       "domain": "00-gov.cn",
       "suffix": "cn",
@@ -1694,30 +1723,6 @@
       "providers": [
         "Reject",
         "Mainland"
-      ]
-    },
-    {
-      "domain": "acoxcv.cn",
-      "suffix": "cn",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "domain": "acs.56.com",
-      "suffix": "56.com",
-      "providers": [
-        "Reject",
-        "MainlandMedia"
-      ]
-    },
-    {
-      "domain": "acs.agent.56.com",
-      "suffix": "56.com",
-      "providers": [
-        "Reject",
-        "MainlandMedia"
       ]
     }
   ],
