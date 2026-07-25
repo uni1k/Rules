@@ -58,7 +58,7 @@
         "PROCESS-NAME": 13,
         "USER-AGENT": 23
       },
-      "sha256": "6d3a41acd7956a012d27f318e13cc66a76febaae7e72c89778d2cea4933556bd"
+      "sha256": "59f051e69b74d809a333c7582ed9b41ed74a105a0d8408d922beef8d97f24c0e"
     },
     "Direct": {
       "rules": 335,
@@ -81,7 +81,7 @@
         "DOMAIN-SUFFIX": 539,
         "IP-CIDR": 46
       },
-      "sha256": "c906c53fed51c59c8cdb3529ac698eff2a9209899284e33bde62624a2a0f8b73"
+      "sha256": "2047b6628914a1c990576dcbef2acc86e10c5a9ff43652f4e38fa8cfb29bc7a2"
     },
     "GitHub": {
       "rules": 31,
@@ -93,18 +93,18 @@
       "sha256": "95299a16144b19c5ff24298c6ba2ab731dc05b99c22340b566408cedf71124ea"
     },
     "Global": {
-      "rules": 34904,
-      "clash_rules": 34857,
+      "rules": 34906,
+      "clash_rules": 34859,
       "types": {
         "DOMAIN": 128,
         "DOMAIN-KEYWORD": 36,
-        "DOMAIN-SUFFIX": 34577,
+        "DOMAIN-SUFFIX": 34579,
         "IP-CIDR": 112,
         "IP-CIDR6": 4,
         "PROCESS-NAME": 1,
         "USER-AGENT": 46
       },
-      "sha256": "c3773c3adec43fdc3278373e8d8784bbff6878e14ee7e406b467d4bfc5298968"
+      "sha256": "18384f34511f2555f0ae4b27ce98248f0d4cf1c219ceaa873a9ef8f24a8c541f"
     },
     "GlobalMedia": {
       "rules": 2335,
@@ -147,18 +147,18 @@
       "sha256": "0a01a43f609f5fe80763ab5c36f7175d451a3bf2d58834bd05e9253c745ab7eb"
     },
     "Mainland": {
-      "rules": 124279,
-      "clash_rules": 124202,
+      "rules": 124292,
+      "clash_rules": 124215,
       "types": {
         "DOMAIN": 294,
         "DOMAIN-KEYWORD": 11,
-        "DOMAIN-SUFFIX": 111463,
-        "IP-CIDR": 8225,
-        "IP-CIDR6": 4209,
+        "DOMAIN-SUFFIX": 111467,
+        "IP-CIDR": 8229,
+        "IP-CIDR6": 4214,
         "PROCESS-NAME": 12,
         "USER-AGENT": 65
       },
-      "sha256": "871e2d2776d1140f86cafa5041e9347a083ccd058c6d4f5d5dc213e8a84c87a6"
+      "sha256": "b58940d05efa55d7c6d21f67bd1a15626b3a0a8d33ef564a84e467ac61c86aed"
     },
     "MainlandMedia": {
       "rules": 446,
@@ -187,17 +187,17 @@
       "sha256": "a8b516163e1c07149d8bc7162f2edf65596c1a189feea09bed312dc8ad05c56b"
     },
     "Reject": {
-      "rules": 163749,
-      "clash_rules": 163744,
+      "rules": 163789,
+      "clash_rules": 163784,
       "types": {
-        "DOMAIN": 24790,
+        "DOMAIN": 24791,
         "DOMAIN-KEYWORD": 335,
-        "DOMAIN-SUFFIX": 137662,
+        "DOMAIN-SUFFIX": 137701,
         "IP-CIDR": 951,
         "IP-CIDR6": 6,
         "URL-REGEX": 5
       },
-      "sha256": "932e607cb816dd4c0dbaa89c3f762646cf797461f5c71da834213ae8216fd1fb"
+      "sha256": "03ca1ac057e6447d252d2f3e9f9f55dde121ad61381de771313a2e03e22d0a5b"
     },
     "Telegram": {
       "rules": 40,
@@ -921,32 +921,541 @@
   "cross_provider_domain_coverages": 3724,
   "domain_coverage_examples": [
     {
-      "domain": "7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe",
-      "suffix": "skk.moe",
+      "domain": "0gr4uqmtt8y41hcjsgrzdrc31.ourdvsss.com",
+      "suffix": "ourdvsss.com",
+      "providers": [
+        "MainlandMedia",
+        "Mainland"
+      ]
+    },
+    {
+      "domain": "0gr4uqmtt8y41hcjsgrzdrc3s.ourdvsss.com",
+      "suffix": "ourdvsss.com",
+      "providers": [
+        "MainlandMedia",
+        "Mainland"
+      ]
+    },
+    {
+      "domain": "0gr4uqmtt8y41hcjsgrzdrc3z.ourdvsss.com",
+      "suffix": "ourdvsss.com",
+      "providers": [
+        "MainlandMedia",
+        "Mainland"
+      ]
+    },
+    {
+      "domain": "0gr4uqmtt8y41hcjsgrzdrctt.ourdvsss.com",
+      "suffix": "ourdvsss.com",
+      "providers": [
+        "MainlandMedia",
+        "Mainland"
+      ]
+    },
+    {
+      "domain": "0gr4uqmtt8y41hcjsgrzdrctu.ourdvsss.com",
+      "suffix": "ourdvsss.com",
+      "providers": [
+        "MainlandMedia",
+        "Mainland"
+      ]
+    },
+    {
+      "domain": "0gr4uqmtt8y41hcjz8yzdnc31.ourdvsss.com",
+      "suffix": "ourdvsss.com",
+      "providers": [
+        "MainlandMedia",
+        "Mainland"
+      ]
+    },
+    {
+      "domain": "0gr4uqmtt8y41hcjz8yzdnc3t.ourdvsss.com",
+      "suffix": "ourdvsss.com",
+      "providers": [
+        "MainlandMedia",
+        "Mainland"
+      ]
+    },
+    {
+      "domain": "0gr4uqmtt8y41hcjzgazdrpba.ourdvsss.com",
+      "suffix": "ourdvsss.com",
+      "providers": [
+        "MainlandMedia",
+        "Mainland"
+      ]
+    },
+    {
+      "domain": "0gr4uqmtt8y41hcjzgazdrpbz.ourdvsss.com",
+      "suffix": "ourdvsss.com",
+      "providers": [
+        "MainlandMedia",
+        "Mainland"
+      ]
+    },
+    {
+      "domain": "0gr4uqmtt8y41hcjzgazdrpjt.ourdvsss.com",
+      "suffix": "ourdvsss.com",
+      "providers": [
+        "MainlandMedia",
+        "Mainland"
+      ]
+    },
+    {
+      "domain": "0gr5dgmttgha1hcj38yzdncb3.ourdvsss.com",
+      "suffix": "ourdvsss.com",
+      "providers": [
+        "MainlandMedia",
+        "Mainland"
+      ]
+    },
+    {
+      "domain": "112-81-125-43.dhost.00cdn.com",
+      "suffix": "00cdn.com",
+      "providers": [
+        "MainlandMedia",
+        "Mainland"
+      ]
+    },
+    {
+      "domain": "113-219-145-1.ksyungslb.com",
+      "suffix": "ksyungslb.com",
+      "providers": [
+        "MainlandMedia",
+        "Mainland"
+      ]
+    },
+    {
+      "domain": "114-236-92-129.ksyungslb.com",
+      "suffix": "ksyungslb.com",
+      "providers": [
+        "MainlandMedia",
+        "Mainland"
+      ]
+    },
+    {
+      "domain": "180-101-74-1.ksyungslb.com",
+      "suffix": "ksyungslb.com",
+      "providers": [
+        "MainlandMedia",
+        "Mainland"
+      ]
+    },
+    {
+      "domain": "1geadrmttge3nhcjwgazdope.ourdvsss.com",
+      "suffix": "ourdvsss.com",
+      "providers": [
+        "MainlandMedia",
+        "Mainland"
+      ]
+    },
+    {
+      "domain": "1geadrmttge3nhcjwgwzdqqe.ourdvsss.com",
+      "suffix": "ourdvsss.com",
+      "providers": [
+        "MainlandMedia",
+        "Mainland"
+      ]
+    },
+    {
+      "domain": "1gr3uomttgr31hcjo8yzdnco.ourdvsss.com",
+      "suffix": "ourdvsss.com",
+      "providers": [
+        "MainlandMedia",
+        "Mainland"
+      ]
+    },
+    {
+      "domain": "1gr3uomttgr31hcjo8yzdnpy.ourdvsss.com",
+      "suffix": "ourdvsss.com",
+      "providers": [
+        "MainlandMedia",
+        "Mainland"
+      ]
+    },
+    {
+      "domain": "1gr3uomttgr31hcjtgezdkcy.ourdvsss.com",
+      "suffix": "ourdvsss.com",
+      "providers": [
+        "MainlandMedia",
+        "Mainland"
+      ]
+    },
+    {
+      "domain": "1gr4uqmtt8y41hcjigazdqca.ourdvsss.com",
+      "suffix": "ourdvsss.com",
+      "providers": [
+        "MainlandMedia",
+        "Mainland"
+      ]
+    },
+    {
+      "domain": "1gr4uqmtt8y41hcjigazdqce.ourdvsss.com",
+      "suffix": "ourdvsss.com",
+      "providers": [
+        "MainlandMedia",
+        "Mainland"
+      ]
+    },
+    {
+      "domain": "1gr4uqmtt8y41hcjigazdqco.ourdvsss.com",
+      "suffix": "ourdvsss.com",
+      "providers": [
+        "MainlandMedia",
+        "Mainland"
+      ]
+    },
+    {
+      "domain": "1gr4uqmtt8y41hcjigazdqpo.ourdvsss.com",
+      "suffix": "ourdvsss.com",
+      "providers": [
+        "MainlandMedia",
+        "Mainland"
+      ]
+    },
+    {
+      "domain": "1gr4uqmtt8y41hcjzgwzdkqe.ourdvsss.com",
+      "suffix": "ourdvsss.com",
+      "providers": [
+        "MainlandMedia",
+        "Mainland"
+      ]
+    },
+    {
+      "domain": "1gr5dgmttgha1hcj38yzdcca.ourdvsss.com",
+      "suffix": "ourdvsss.com",
+      "providers": [
+        "MainlandMedia",
+        "Mainland"
+      ]
+    },
+    {
+      "domain": "1gr5dgmttgha1hcj38yzdcco.ourdvsss.com",
+      "suffix": "ourdvsss.com",
+      "providers": [
+        "MainlandMedia",
+        "Mainland"
+      ]
+    },
+    {
+      "domain": "1gr5dgmttgha1hcj38yzdkca.ourdvsss.com",
+      "suffix": "ourdvsss.com",
+      "providers": [
+        "MainlandMedia",
+        "Mainland"
+      ]
+    },
+    {
+      "domain": "1gr5dgmttgha1hcj38yzdkco.ourdvsss.com",
+      "suffix": "ourdvsss.com",
+      "providers": [
+        "MainlandMedia",
+        "Mainland"
+      ]
+    },
+    {
+      "domain": "1gr5dgmttgha1hcj38yzdkpe.ourdvsss.com",
+      "suffix": "ourdvsss.com",
+      "providers": [
+        "MainlandMedia",
+        "Mainland"
+      ]
+    },
+    {
+      "domain": "1gr5dgmttgha1hcj38yzdkpy.ourdvsss.com",
+      "suffix": "ourdvsss.com",
+      "providers": [
+        "MainlandMedia",
+        "Mainland"
+      ]
+    },
+    {
+      "domain": "1gr5dgmttgha1hcj38yzdkqy.ourdvsss.com",
+      "suffix": "ourdvsss.com",
+      "providers": [
+        "MainlandMedia",
+        "Mainland"
+      ]
+    },
+    {
+      "domain": "1gr5dgmttgha1hcj3gczdcpa.ourdvsss.com",
+      "suffix": "ourdvsss.com",
+      "providers": [
+        "MainlandMedia",
+        "Mainland"
+      ]
+    },
+    {
+      "domain": "1gr5dgmttgha1hcj3gczdcpe.ourdvsss.com",
+      "suffix": "ourdvsss.com",
+      "providers": [
+        "MainlandMedia",
+        "Mainland"
+      ]
+    },
+    {
+      "domain": "1gr5dgmttgha1hcj3gczdcpo.ourdvsss.com",
+      "suffix": "ourdvsss.com",
+      "providers": [
+        "MainlandMedia",
+        "Mainland"
+      ]
+    },
+    {
+      "domain": "1gr5dgmttgha1hcj3gczdcqy.ourdvsss.com",
+      "suffix": "ourdvsss.com",
+      "providers": [
+        "MainlandMedia",
+        "Mainland"
+      ]
+    },
+    {
+      "domain": "1gr5dgmttgha1hcttgrzdnpo.ourdvsss.com",
+      "suffix": "ourdvsss.com",
+      "providers": [
+        "MainlandMedia",
+        "Mainland"
+      ]
+    },
+    {
+      "domain": "1graukmttga4nhcjtgozdgce.ourdvsss.com",
+      "suffix": "ourdvsss.com",
+      "providers": [
+        "MainlandMedia",
+        "Mainland"
+      ]
+    },
+    {
+      "domain": "218-91-225-1.ksyungslb.com",
+      "suffix": "ksyungslb.com",
+      "providers": [
+        "MainlandMedia",
+        "Mainland"
+      ]
+    },
+    {
+      "domain": "219-155-150-1.ksyungslb.com",
+      "suffix": "ksyungslb.com",
+      "providers": [
+        "MainlandMedia",
+        "Mainland"
+      ]
+    },
+    {
+      "domain": "222-188-6-1.ksyungslb.com",
+      "suffix": "ksyungslb.com",
+      "providers": [
+        "MainlandMedia",
+        "Mainland"
+      ]
+    },
+    {
+      "domain": "36-104-134-1.ksyungslb.com",
+      "suffix": "ksyungslb.com",
+      "providers": [
+        "MainlandMedia",
+        "Mainland"
+      ]
+    },
+    {
+      "domain": "36-25-252-1.ksyungslb.com",
+      "suffix": "ksyungslb.com",
+      "providers": [
+        "MainlandMedia",
+        "Mainland"
+      ]
+    },
+    {
+      "domain": "3ge3drmttga5nhcbqge3ur.ourdvsss.com",
+      "suffix": "ourdvsss.com",
+      "providers": [
+        "MainlandMedia",
+        "Mainland"
+      ]
+    },
+    {
+      "domain": "3geauymtsgrzdnqbofa5do.ourdvsss.com",
+      "suffix": "ourdvsss.com",
+      "providers": [
+        "MainlandMedia",
+        "Mainland"
+      ]
+    },
+    {
+      "domain": "3geauymtsgrzdnqbofa5dy.ourdvsss.com",
+      "suffix": "ourdvsss.com",
+      "providers": [
+        "MainlandMedia",
+        "Mainland"
+      ]
+    },
+    {
+      "domain": "3geauymtsgrzdrcbzfahue.ourdvsss.com",
+      "suffix": "ourdvsss.com",
+      "providers": [
+        "MainlandMedia",
+        "Mainland"
+      ]
+    },
+    {
+      "domain": "3geauymtsgrzdrcbzfahuk.ourdvsss.com",
+      "suffix": "ourdvsss.com",
+      "providers": [
+        "MainlandMedia",
+        "Mainland"
+      ]
+    },
+    {
+      "domain": "4go41hcjtgazdoctqge4o.ourdvsss.com",
+      "suffix": "ourdvsss.com",
+      "providers": [
+        "MainlandMedia",
+        "Mainland"
+      ]
+    },
+    {
+      "domain": "00713915daab0be43def5c338c02c80b.dlied1.cdntips.net",
+      "suffix": "cdntips.net",
+      "providers": [
+        "MainlandMedia",
+        "Mainland"
+      ]
+    },
+    {
+      "domain": "17caa75e77d31e1f5a7841e0b3374569.dlied1.cdntips.net",
+      "suffix": "cdntips.net",
+      "providers": [
+        "MainlandMedia",
+        "Mainland"
+      ]
+    },
+    {
+      "domain": "apd-pcdnvodstat.teg.tencent-cloud.net",
+      "suffix": "tencent-cloud.net",
+      "providers": [
+        "MainlandMedia",
+        "Mainland"
+      ]
+    },
+    {
+      "domain": "api.iplay.163.com",
+      "suffix": "163.com",
       "providers": [
         "Reject",
-        "LAN",
-        "Direct",
-        "AI",
-        "Global"
+        "MainlandMedia",
+        "Mainland"
       ]
     },
     {
-      "domain": "router.asus.com",
-      "suffix": "asus.com",
+      "domain": "aqqmusic.tc.qq.com",
+      "suffix": "qq.com",
       "providers": [
-        "LAN",
-        "Direct",
-        "Global"
+        "MainlandMedia",
+        "Mainland"
       ]
     },
     {
-      "domain": "repeater.asus.com",
-      "suffix": "asus.com",
+      "domain": "dldir1.qq.com",
+      "suffix": "qq.com",
       "providers": [
-        "LAN",
-        "Direct",
-        "Global"
+        "MainlandMedia",
+        "Mainland"
+      ]
+    },
+    {
+      "domain": "iacc.qq.com",
+      "suffix": "qq.com",
+      "providers": [
+        "MainlandMedia",
+        "Mainland"
+      ]
+    },
+    {
+      "domain": "ins-eeww7kom.ias.tencent-cloud.net",
+      "suffix": "tencent-cloud.net",
+      "providers": [
+        "MainlandMedia",
+        "Mainland"
+      ]
+    },
+    {
+      "domain": "ios.video.mpush.qq.com",
+      "suffix": "mpush.qq.com",
+      "providers": [
+        "Reject",
+        "MainlandMedia"
+      ]
+    },
+    {
+      "domain": "mam.netease.com",
+      "suffix": "netease.com",
+      "providers": [
+        "Reject",
+        "MainlandMedia",
+        "Mainland"
+      ]
+    },
+    {
+      "domain": "moo.qq.com",
+      "suffix": "qq.com",
+      "providers": [
+        "MainlandMedia",
+        "Mainland"
+      ]
+    },
+    {
+      "domain": "rdelivery.qq.com",
+      "suffix": "qq.com",
+      "providers": [
+        "MainlandMedia",
+        "Mainland"
+      ]
+    },
+    {
+      "domain": "ts.qq.com",
+      "suffix": "qq.com",
+      "providers": [
+        "MainlandMedia",
+        "Mainland"
+      ]
+    },
+    {
+      "domain": "v.streaming.qq.com",
+      "suffix": "qq.com",
+      "providers": [
+        "MainlandMedia",
+        "Mainland"
+      ]
+    },
+    {
+      "domain": "video-public-1258344701.shiply-cdn.qq.com",
+      "suffix": "qq.com",
+      "providers": [
+        "MainlandMedia",
+        "Mainland"
+      ]
+    },
+    {
+      "domain": "video-search-1258344701.shiply-cdn.qq.com",
+      "suffix": "qq.com",
+      "providers": [
+        "MainlandMedia",
+        "Mainland"
+      ]
+    },
+    {
+      "domain": "video-vip-1258344701.shiply-cdn.qq.com",
+      "suffix": "qq.com",
+      "providers": [
+        "MainlandMedia",
+        "Mainland"
+      ]
+    },
+    {
+      "domain": "yoo.gtimg.com",
+      "suffix": "gtimg.com",
+      "providers": [
+        "MainlandMedia",
+        "Mainland"
       ]
     },
     {
@@ -1208,518 +1717,6 @@
     {
       "domain": "49453k0l.vr.loveota.com",
       "suffix": "loveota.com",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "domain": "49453k0l.vs.loveota.com",
-      "suffix": "loveota.com",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "domain": "4au.htf16a.cn",
-      "suffix": "cn",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "domain": "4gf.9tkl2d.cn",
-      "suffix": "cn",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "domain": "4p1uo.cn",
-      "suffix": "cn",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "domain": "51experience.cn",
-      "suffix": "cn",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "domain": "51juejinjie.com.cn",
-      "suffix": "cn",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "domain": "52aan.cn",
-      "suffix": "cn",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "domain": "555vps.cn",
-      "suffix": "cn",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "domain": "56vob.cn",
-      "suffix": "cn",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "domain": "58xiao.cn",
-      "suffix": "cn",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "domain": "65h79.cn",
-      "suffix": "cn",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "domain": "66.zx1234.com",
-      "suffix": "zx1234.com",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "domain": "68l0fx.cn",
-      "suffix": "cn",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "domain": "6pdd2.cn",
-      "suffix": "cn",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "domain": "6x1ui.cn",
-      "suffix": "cn",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "domain": "77av.cn",
-      "suffix": "cn",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "domain": "77tianxu.cn",
-      "suffix": "cn",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "domain": "77vip.wang",
-      "suffix": "wang",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "domain": "7cjsh.cn",
-      "suffix": "cn",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "domain": "7dlm.cn",
-      "suffix": "cn",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "domain": "7h0sxe.cn",
-      "suffix": "cn",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "domain": "7mnpeh.com1.z0.glb.clouddn.com",
-      "suffix": "clouddn.com",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "domain": "7ssw.cn",
-      "suffix": "cn",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "domain": "8.jrj.com.cn",
-      "suffix": "cn",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "domain": "8020home.com.cn",
-      "suffix": "cn",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "domain": "80vn.cn",
-      "suffix": "cn",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "domain": "8132.qizhihaotian.cn",
-      "suffix": "cn",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "domain": "815ss.cn",
-      "suffix": "cn",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "domain": "8315.cn",
-      "suffix": "cn",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "domain": "89kvh.cn",
-      "suffix": "cn",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "domain": "8bq898.73miqb.cn",
-      "suffix": "cn",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "domain": "8c3k.cn",
-      "suffix": "cn",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "domain": "8pay.wang",
-      "suffix": "wang",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "domain": "8t2.di91ba.cn",
-      "suffix": "cn",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "domain": "8y7th.cn",
-      "suffix": "cn",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "domain": "8zr4g.cn",
-      "suffix": "cn",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "domain": "913h6.cn",
-      "suffix": "cn",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "domain": "93ta.cn",
-      "suffix": "cn",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "domain": "964ka.cn",
-      "suffix": "cn",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "domain": "980he.cn",
-      "suffix": "cn",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "domain": "98hx.cn",
-      "suffix": "cn",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "domain": "9e7gb.cn",
-      "suffix": "cn",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "domain": "a-remad.qm989.com",
-      "suffix": "qm989.com",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "domain": "a.aspnet.tech",
-      "suffix": "aspnet.tech",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "domain": "a.booksir.cn",
-      "suffix": "cn",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "domain": "a.cntv.cn",
-      "suffix": "cntv.cn",
-      "providers": [
-        "Reject",
-        "MainlandMedia"
-      ]
-    },
-    {
-      "domain": "a.diaoyu.cn",
-      "suffix": "cn",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "domain": "a.hsbianma.com",
-      "suffix": "hsbianma.com",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "domain": "a.psxxw.cn",
-      "suffix": "cn",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "domain": "a.slsbc.cn",
-      "suffix": "cn",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "domain": "a.xxdy8.cn",
-      "suffix": "cn",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "domain": "a1.7down.com",
-      "suffix": "7down.com",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "domain": "a1.aluntan.com",
-      "suffix": "aluntan.com",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "domain": "a1.mingyihui.net",
-      "suffix": "mingyihui.net",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "domain": "aa.sdo.com",
-      "suffix": "sdo.com",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "domain": "aa1.ifeng.com",
-      "suffix": "ifeng.com",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "domain": "aaayc.cn",
-      "suffix": "cn",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "domain": "aan.amazon.com",
-      "suffix": "amazon.com",
-      "providers": [
-        "Reject",
-        "Global"
-      ]
-    },
-    {
-      "domain": "aboard.apilocate.amap.com",
-      "suffix": "amap.com",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "domain": "abroad-ad.kingsoft-office-service.com",
-      "suffix": "kingsoft-office-service.com",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "domain": "abtao.wang",
-      "suffix": "wang",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "domain": "ac.dun.163yun.com",
-      "suffix": "163yun.com",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "domain": "access.open.uc.cn",
-      "suffix": "cn",
-      "providers": [
-        "Reject",
-        "Mainland"
-      ]
-    },
-    {
-      "domain": "achicih.gitee.io",
-      "suffix": "gitee.io",
       "providers": [
         "Reject",
         "Mainland"
