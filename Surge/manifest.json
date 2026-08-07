@@ -35,16 +35,16 @@
   },
   "providers": {
     "AI": {
-      "rules": 88,
-      "clash_rules": 87,
+      "rules": 89,
+      "clash_rules": 88,
       "types": {
         "DOMAIN": 25,
         "DOMAIN-KEYWORD": 5,
-        "DOMAIN-SUFFIX": 55,
+        "DOMAIN-SUFFIX": 56,
         "IP-CIDR": 2,
         "URL-REGEX": 1
       },
-      "sha256": "7efeac3a6802fa80f5197dc721b66a37fb90e0f0da379e065d85c349b5148a88"
+      "sha256": "3c43d0b8cce28b5778b93cf32c184197327c1d5e284a682a47c58455e0b84089"
     },
     "Apple": {
       "rules": 1616,
@@ -58,7 +58,7 @@
         "PROCESS-NAME": 13,
         "USER-AGENT": 23
       },
-      "sha256": "ebbac3f3114fab3eb1dd85f32894cb96160cc63fb744371b1d2789d71b0c310a"
+      "sha256": "9a4ff0774b8053f23735ba2e206e5e8c597e9b68c05211efae1607995ceaa412"
     },
     "Direct": {
       "rules": 335,
@@ -70,7 +70,7 @@
         "PROCESS-NAME": 39,
         "USER-AGENT": 1
       },
-      "sha256": "c90120340bd00b655f4f1b9e6748593204260cd9fd3e3b0f2f564a9ab3dbbee0"
+      "sha256": "0b20807fbb53513c118f088e91591501cfec944515df11d3081d1dbb6769607e"
     },
     "Game": {
       "rules": 597,
@@ -81,7 +81,7 @@
         "DOMAIN-SUFFIX": 539,
         "IP-CIDR": 46
       },
-      "sha256": "c40ff469057369f3e3ef13f42e0db85c502caab6502b199d7df74788de86dce0"
+      "sha256": "4698bf3e0edc7ea4a6d62018dede10c5bd01f2599df138f8d88bb83011508629"
     },
     "GitHub": {
       "rules": 31,
@@ -93,18 +93,18 @@
       "sha256": "95299a16144b19c5ff24298c6ba2ab731dc05b99c22340b566408cedf71124ea"
     },
     "Global": {
-      "rules": 34949,
-      "clash_rules": 34902,
+      "rules": 34963,
+      "clash_rules": 34916,
       "types": {
         "DOMAIN": 128,
         "DOMAIN-KEYWORD": 36,
-        "DOMAIN-SUFFIX": 34622,
+        "DOMAIN-SUFFIX": 34636,
         "IP-CIDR": 112,
         "IP-CIDR6": 4,
         "PROCESS-NAME": 1,
         "USER-AGENT": 46
       },
-      "sha256": "210142be3d13233ba3734cb9f1436da8301a179e6061136a629d940b70fa6cad"
+      "sha256": "a4d8fcd1ce080914fd4401d5c82c946d8f33ff41fb0b90a9ae6d6fd6f7776d9e"
     },
     "GlobalMedia": {
       "rules": 2335,
@@ -119,7 +119,7 @@
         "URL-REGEX": 1,
         "USER-AGENT": 69
       },
-      "sha256": "c26170f6a33a3c25fd229ac71b8e1dd549b324be4aab16880a7809ede6e409bc"
+      "sha256": "2f6cee1ea0d6b5556b2011ba5efb94d1d461e25981b9bad8b96d811048d35a46"
     },
     "Google": {
       "rules": 703,
@@ -144,21 +144,21 @@
         "IP-CIDR": 8,
         "IP-CIDR6": 3
       },
-      "sha256": "8fa4166c21a4c0d7e8c4d9a5f6507ce62e45a4c52cf365328e10c6b20a8df90c"
+      "sha256": "a1ca8208bc1dbdfb7bc4e9493165c19a254e0d39b78996328a5b365b48a1c3a2"
     },
     "Mainland": {
-      "rules": 123715,
-      "clash_rules": 123638,
+      "rules": 123723,
+      "clash_rules": 123646,
       "types": {
         "DOMAIN": 296,
         "DOMAIN-KEYWORD": 11,
         "DOMAIN-SUFFIX": 110887,
-        "IP-CIDR": 8245,
+        "IP-CIDR": 8253,
         "IP-CIDR6": 4199,
         "PROCESS-NAME": 12,
         "USER-AGENT": 65
       },
-      "sha256": "dc87bb9b79ea25bd2a897e50935690d077059294fe75d3c01100eea86b88a168"
+      "sha256": "a40c77ff392c17968a9f27030fa5df827cc439887b41f8911b51ddb4ea5285c6"
     },
     "MainlandMedia": {
       "rules": 446,
@@ -187,17 +187,17 @@
       "sha256": "a8b516163e1c07149d8bc7162f2edf65596c1a189feea09bed312dc8ad05c56b"
     },
     "Reject": {
-      "rules": 163664,
-      "clash_rules": 163659,
+      "rules": 163740,
+      "clash_rules": 163735,
       "types": {
         "DOMAIN": 24794,
         "DOMAIN-KEYWORD": 335,
-        "DOMAIN-SUFFIX": 137573,
+        "DOMAIN-SUFFIX": 137649,
         "IP-CIDR": 951,
         "IP-CIDR6": 6,
         "URL-REGEX": 5
       },
-      "sha256": "64ea215f8ae89931db2dfe41f47f1f98adec09cd3bca193ba531101e418eae67"
+      "sha256": "e2587554438fcf723f4629562fc654d820911246f1dd477af7c0f8350551a5ab"
     },
     "Telegram": {
       "rules": 40,
@@ -213,10 +213,10 @@
       "sha256": "70cef2ac856e8eb547e3b61171f68d3a957f373139b6e42666b8b784a2c63511"
     }
   },
-  "cross_provider_exact_duplicates": 4516,
+  "cross_provider_exact_duplicates": 4517,
   "duplicate_examples": [
     {
-      "rule": "DOMAIN,7h15_ru1353t_1s_m4d3_by_5ukk4w.skk.moe",
+      "rule": "DOMAIN,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe",
       "providers": [
         "Reject",
         "LAN",
