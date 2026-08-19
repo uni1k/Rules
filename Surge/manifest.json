@@ -58,7 +58,7 @@
         "PROCESS-NAME": 13,
         "USER-AGENT": 23
       },
-      "sha256": "4eb636904cab0ae08b5c28e32cfff7dfab6a54f8e91b6a361864b6d28578865c"
+      "sha256": "8ebde85f346f26978b202fd369a333c05b6c3efe719dce1d19751c773fbf7823"
     },
     "Direct": {
       "rules": 336,
@@ -81,7 +81,7 @@
         "DOMAIN-SUFFIX": 539,
         "IP-CIDR": 46
       },
-      "sha256": "fd480d9203afd991c6a953ec350465f50fdef9ac70ee4fc3db1a4b08592379c1"
+      "sha256": "5f2997a92425e425fc8d92012562a7fa774341e75032c5d55dba1cfe70c8207f"
     },
     "GitHub": {
       "rules": 31,
@@ -93,18 +93,18 @@
       "sha256": "95299a16144b19c5ff24298c6ba2ab731dc05b99c22340b566408cedf71124ea"
     },
     "Global": {
-      "rules": 35049,
-      "clash_rules": 35002,
+      "rules": 35050,
+      "clash_rules": 35003,
       "types": {
         "DOMAIN": 128,
         "DOMAIN-KEYWORD": 36,
-        "DOMAIN-SUFFIX": 34722,
+        "DOMAIN-SUFFIX": 34723,
         "IP-CIDR": 112,
         "IP-CIDR6": 4,
         "PROCESS-NAME": 1,
         "USER-AGENT": 46
       },
-      "sha256": "6c19a5769cc79af88099fc8d7d91aa73e1f6527ec13e693a1310a909198dcd99"
+      "sha256": "3ae0b4c5b966fae861ccc7fe4ed752c9339641d08aa80aa700c02339606fa5ac"
     },
     "GlobalMedia": {
       "rules": 2335,
@@ -152,13 +152,13 @@
       "types": {
         "DOMAIN": 296,
         "DOMAIN-KEYWORD": 11,
-        "DOMAIN-SUFFIX": 110901,
-        "IP-CIDR": 8187,
+        "DOMAIN-SUFFIX": 110902,
+        "IP-CIDR": 8186,
         "IP-CIDR6": 3976,
         "PROCESS-NAME": 12,
         "USER-AGENT": 65
       },
-      "sha256": "72c4c62e527faa1b9374bee4b59cefc2266fb77372ec66a7c378f429a7b653da"
+      "sha256": "e3a2f3672432ebeb1ecfa6576a75891668cc8520172b2f87dd512c2af3771655"
     },
     "MainlandMedia": {
       "rules": 446,
@@ -187,17 +187,17 @@
       "sha256": "a8b516163e1c07149d8bc7162f2edf65596c1a189feea09bed312dc8ad05c56b"
     },
     "Reject": {
-      "rules": 163627,
-      "clash_rules": 163622,
+      "rules": 183110,
+      "clash_rules": 183105,
       "types": {
-        "DOMAIN": 24781,
+        "DOMAIN": 24782,
         "DOMAIN-KEYWORD": 335,
-        "DOMAIN-SUFFIX": 137549,
+        "DOMAIN-SUFFIX": 157031,
         "IP-CIDR": 951,
         "IP-CIDR6": 6,
         "URL-REGEX": 5
       },
-      "sha256": "96966a5cd3b73114c2e3540accc469de762c8f0b25eef5ea5f018377b18af1e3"
+      "sha256": "337e3131c08eadb9dfd84e9206384d6f2e7787c9c82e9fa9df85522d71e54190"
     },
     "Telegram": {
       "rules": 40,
@@ -918,7 +918,7 @@
       ]
     }
   ],
-  "cross_provider_domain_coverages": 3712,
+  "cross_provider_domain_coverages": 3713,
   "domain_coverage_examples": [
     {
       "domain": "eaasserts-a.akamaihd.net",
