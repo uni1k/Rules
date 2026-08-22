@@ -58,7 +58,7 @@
         "PROCESS-NAME": 13,
         "USER-AGENT": 23
       },
-      "sha256": "8ebde85f346f26978b202fd369a333c05b6c3efe719dce1d19751c773fbf7823"
+      "sha256": "5e92156b9d40e1c43b0f700b5696ad52280cc198fc4eb9c89f59252fbd56830d"
     },
     "Direct": {
       "rules": 336,
@@ -81,7 +81,7 @@
         "DOMAIN-SUFFIX": 539,
         "IP-CIDR": 46
       },
-      "sha256": "5f2997a92425e425fc8d92012562a7fa774341e75032c5d55dba1cfe70c8207f"
+      "sha256": "6254d5a9114e4282407655191ac3a81cbd617adab5f55d516936318fbdc5831c"
     },
     "GitHub": {
       "rules": 31,
@@ -93,18 +93,18 @@
       "sha256": "95299a16144b19c5ff24298c6ba2ab731dc05b99c22340b566408cedf71124ea"
     },
     "Global": {
-      "rules": 35050,
-      "clash_rules": 35003,
+      "rules": 35061,
+      "clash_rules": 35014,
       "types": {
         "DOMAIN": 128,
         "DOMAIN-KEYWORD": 36,
-        "DOMAIN-SUFFIX": 34723,
+        "DOMAIN-SUFFIX": 34734,
         "IP-CIDR": 112,
         "IP-CIDR6": 4,
         "PROCESS-NAME": 1,
         "USER-AGENT": 46
       },
-      "sha256": "3ae0b4c5b966fae861ccc7fe4ed752c9339641d08aa80aa700c02339606fa5ac"
+      "sha256": "eea6f78d9dcd4c204e6a87179c79a9ca927686fcbba7aa6029aa0885c00102c9"
     },
     "GlobalMedia": {
       "rules": 2335,
@@ -147,18 +147,18 @@
       "sha256": "a1ca8208bc1dbdfb7bc4e9493165c19a254e0d39b78996328a5b365b48a1c3a2"
     },
     "Mainland": {
-      "rules": 123448,
-      "clash_rules": 123371,
+      "rules": 123423,
+      "clash_rules": 123346,
       "types": {
-        "DOMAIN": 296,
+        "DOMAIN": 267,
         "DOMAIN-KEYWORD": 11,
         "DOMAIN-SUFFIX": 110902,
-        "IP-CIDR": 8186,
+        "IP-CIDR": 8190,
         "IP-CIDR6": 3976,
         "PROCESS-NAME": 12,
         "USER-AGENT": 65
       },
-      "sha256": "e3a2f3672432ebeb1ecfa6576a75891668cc8520172b2f87dd512c2af3771655"
+      "sha256": "50f3ac0c11e2f9c206204524adb75a703b39f797ba95ef3985cf4b6b3b56c41a"
     },
     "MainlandMedia": {
       "rules": 446,
@@ -187,17 +187,17 @@
       "sha256": "a8b516163e1c07149d8bc7162f2edf65596c1a189feea09bed312dc8ad05c56b"
     },
     "Reject": {
-      "rules": 183110,
-      "clash_rules": 183105,
+      "rules": 183070,
+      "clash_rules": 183065,
       "types": {
-        "DOMAIN": 24782,
+        "DOMAIN": 24784,
         "DOMAIN-KEYWORD": 335,
-        "DOMAIN-SUFFIX": 157031,
+        "DOMAIN-SUFFIX": 156989,
         "IP-CIDR": 951,
         "IP-CIDR6": 6,
         "URL-REGEX": 5
       },
-      "sha256": "337e3131c08eadb9dfd84e9206384d6f2e7787c9c82e9fa9df85522d71e54190"
+      "sha256": "9b132baace0aef43d76f7a9dcbc222f9b5b30111189d76c798ecdcdb7d3371ec"
     },
     "Telegram": {
       "rules": 40,
@@ -241,6 +241,7 @@
     {
       "rule": "DOMAIN,analytics.strava.com",
       "providers": [
+        "Reject",
         "Direct",
         "Mainland"
       ]
@@ -918,7 +919,7 @@
       ]
     }
   ],
-  "cross_provider_domain_coverages": 3713,
+  "cross_provider_domain_coverages": 3687,
   "domain_coverage_examples": [
     {
       "domain": "eaasserts-a.akamaihd.net",
@@ -1749,19 +1750,19 @@
       ]
     },
     {
-      "domain": "afcs.dell.com",
-      "suffix": "dell.com",
-      "providers": [
-        "Mainland",
-        "Global"
-      ]
-    },
-    {
       "domain": "alibaba.cdn.steampipe.steamcontent.com",
       "suffix": "steamcontent.com",
       "providers": [
         "Mainland",
         "Game"
+      ]
+    },
+    {
+      "domain": "beacons.gcp.gvt2.com",
+      "suffix": "gcp.gvt2.com",
+      "providers": [
+        "Mainland",
+        "Google"
       ]
     }
   ],
