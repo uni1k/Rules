@@ -58,7 +58,7 @@
         "PROCESS-NAME": 13,
         "USER-AGENT": 23
       },
-      "sha256": "ebbac3f3114fab3eb1dd85f32894cb96160cc63fb744371b1d2789d71b0c310a"
+      "sha256": "cfec6ffe0886e7e1251de7989e869f1086d738ddff87860bd390f690c1dc2e63"
     },
     "Direct": {
       "rules": 337,
@@ -81,7 +81,7 @@
         "DOMAIN-SUFFIX": 539,
         "IP-CIDR": 46
       },
-      "sha256": "8972a414db45813120fa6503c29c6a8beb7f2f9ff0d88c395705270e011524c7"
+      "sha256": "1d5b557373caf84d8a702d705304d72ddc8ca4d3818b81dc6e5d0adc50c87982"
     },
     "GitHub": {
       "rules": 31,
@@ -93,18 +93,18 @@
       "sha256": "95299a16144b19c5ff24298c6ba2ab731dc05b99c22340b566408cedf71124ea"
     },
     "Global": {
-      "rules": 35074,
-      "clash_rules": 35027,
+      "rules": 35075,
+      "clash_rules": 35028,
       "types": {
         "DOMAIN": 128,
         "DOMAIN-KEYWORD": 36,
-        "DOMAIN-SUFFIX": 34747,
+        "DOMAIN-SUFFIX": 34748,
         "IP-CIDR": 112,
         "IP-CIDR6": 4,
         "PROCESS-NAME": 1,
         "USER-AGENT": 46
       },
-      "sha256": "b6ec0bfe4584d7bc2966cd06747be880522e5462eae3b0635725ba4eab710bd1"
+      "sha256": "826f4d4739a72de9d72a79ea14a4fd70ac1e0dc4e78bb1c3fc2e94e12c796a84"
     },
     "GlobalMedia": {
       "rules": 2335,
@@ -147,18 +147,18 @@
       "sha256": "a1ca8208bc1dbdfb7bc4e9493165c19a254e0d39b78996328a5b365b48a1c3a2"
     },
     "Mainland": {
-      "rules": 123604,
-      "clash_rules": 123527,
+      "rules": 123583,
+      "clash_rules": 123506,
       "types": {
         "DOMAIN": 267,
         "DOMAIN-KEYWORD": 11,
-        "DOMAIN-SUFFIX": 110793,
-        "IP-CIDR": 8244,
-        "IP-CIDR6": 4212,
+        "DOMAIN-SUFFIX": 110773,
+        "IP-CIDR": 8246,
+        "IP-CIDR6": 4209,
         "PROCESS-NAME": 12,
         "USER-AGENT": 65
       },
-      "sha256": "683585a22d1527a58cb04d85133763c3fef362ec4a7df1a105013881b90cdfe6"
+      "sha256": "f4f05b0b65b9e6238edfe7716418e5bc74001a0f48e975c21058f6c0ad7bba62"
     },
     "MainlandMedia": {
       "rules": 446,
@@ -187,17 +187,17 @@
       "sha256": "a8b516163e1c07149d8bc7162f2edf65596c1a189feea09bed312dc8ad05c56b"
     },
     "Reject": {
-      "rules": 183105,
-      "clash_rules": 183100,
+      "rules": 183244,
+      "clash_rules": 183239,
       "types": {
         "DOMAIN": 24796,
         "DOMAIN-KEYWORD": 335,
-        "DOMAIN-SUFFIX": 157009,
+        "DOMAIN-SUFFIX": 157148,
         "IP-CIDR": 954,
         "IP-CIDR6": 6,
         "URL-REGEX": 5
       },
-      "sha256": "ff5e7800b69e0f6857a014a9cda952ee0122a3f47ef4dc2936d87a51a633a102"
+      "sha256": "7b8c83df3f73113172f1e44827e216d50640bb95dfe15536ad014bf35fcc2251"
     },
     "Telegram": {
       "rules": 40,
