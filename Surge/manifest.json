@@ -58,7 +58,7 @@
         "PROCESS-NAME": 13,
         "USER-AGENT": 23
       },
-      "sha256": "4eb636904cab0ae08b5c28e32cfff7dfab6a54f8e91b6a361864b6d28578865c"
+      "sha256": "ebbac3f3114fab3eb1dd85f32894cb96160cc63fb744371b1d2789d71b0c310a"
     },
     "Direct": {
       "rules": 337,
@@ -81,7 +81,7 @@
         "DOMAIN-SUFFIX": 539,
         "IP-CIDR": 46
       },
-      "sha256": "038d01797e996db1396353c7df68d940dcb30d6516e19d8846ebebdcdf466f79"
+      "sha256": "92d3747ccd052dd899191f3373b37043c7eaebf937f04ca786baccdf7a75f45c"
     },
     "GitHub": {
       "rules": 31,
@@ -147,18 +147,18 @@
       "sha256": "a1ca8208bc1dbdfb7bc4e9493165c19a254e0d39b78996328a5b365b48a1c3a2"
     },
     "Mainland": {
-      "rules": 123430,
-      "clash_rules": 123353,
+      "rules": 123440,
+      "clash_rules": 123363,
       "types": {
         "DOMAIN": 267,
         "DOMAIN-KEYWORD": 11,
         "DOMAIN-SUFFIX": 110618,
         "IP-CIDR": 8245,
-        "IP-CIDR6": 4212,
+        "IP-CIDR6": 4222,
         "PROCESS-NAME": 12,
         "USER-AGENT": 65
       },
-      "sha256": "7d123458a5b3e14c97a7553edefeda9989cba51412e5c37a842e3d339908ab4b"
+      "sha256": "d5e29aa2be84d8168a44c4f36e170e8b692836303dfad0bc25cf399ab842269f"
     },
     "MainlandMedia": {
       "rules": 446,
@@ -187,17 +187,17 @@
       "sha256": "a8b516163e1c07149d8bc7162f2edf65596c1a189feea09bed312dc8ad05c56b"
     },
     "Reject": {
-      "rules": 182549,
-      "clash_rules": 182544,
+      "rules": 183006,
+      "clash_rules": 183001,
       "types": {
         "DOMAIN": 24798,
         "DOMAIN-KEYWORD": 335,
-        "DOMAIN-SUFFIX": 156451,
+        "DOMAIN-SUFFIX": 156908,
         "IP-CIDR": 954,
         "IP-CIDR6": 6,
         "URL-REGEX": 5
       },
-      "sha256": "a5e25f458efb89c2c42eebe82518d11c2048065cfa447f4407229f43470cfcaf"
+      "sha256": "b68b807874e7d87f5c5199eb718987bc9749fb935577d8eea82e9ae5ae2e9bef"
     },
     "Telegram": {
       "rules": 40,
@@ -213,7 +213,7 @@
       "sha256": "70cef2ac856e8eb547e3b61171f68d3a957f373139b6e42666b8b784a2c63511"
     }
   },
-  "cross_provider_exact_duplicates": 4519,
+  "cross_provider_exact_duplicates": 4520,
   "duplicate_examples": [
     {
       "rule": "DOMAIN,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe",
