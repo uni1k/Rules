@@ -58,7 +58,7 @@
         "PROCESS-NAME": 13,
         "USER-AGENT": 23
       },
-      "sha256": "dfd1117392a01d2dcea6ece59abf92a1d92d3adc7bb69b8e7889ed9c8005a560"
+      "sha256": "9a4ff0774b8053f23735ba2e206e5e8c597e9b68c05211efae1607995ceaa412"
     },
     "Direct": {
       "rules": 337,
@@ -81,7 +81,7 @@
         "DOMAIN-SUFFIX": 539,
         "IP-CIDR": 46
       },
-      "sha256": "4e2c8e81cb6dba52e41c515dc31a6671ac2cc9bca70101fbaf2127757a26a42c"
+      "sha256": "1240bcc5ecc3d7588cde90484f983a33f79c593cf4b043f5ce3e65a7dc12a3a8"
     },
     "GitHub": {
       "rules": 31,
@@ -147,18 +147,18 @@
       "sha256": "a1ca8208bc1dbdfb7bc4e9493165c19a254e0d39b78996328a5b365b48a1c3a2"
     },
     "Mainland": {
-      "rules": 123631,
-      "clash_rules": 123554,
+      "rules": 123630,
+      "clash_rules": 123553,
       "types": {
         "DOMAIN": 267,
         "DOMAIN-KEYWORD": 11,
         "DOMAIN-SUFFIX": 110820,
-        "IP-CIDR": 8244,
+        "IP-CIDR": 8243,
         "IP-CIDR6": 4212,
         "PROCESS-NAME": 12,
         "USER-AGENT": 65
       },
-      "sha256": "d98aa5b57b791487ef4482e05c466b9930f8678bea822764fcad0b6a06035148"
+      "sha256": "c83689e1127ae0ec3a52d8d6d794a593e5fc5097ec1c33013abc4ea6da2e94a5"
     },
     "MainlandMedia": {
       "rules": 446,
@@ -187,17 +187,17 @@
       "sha256": "a8b516163e1c07149d8bc7162f2edf65596c1a189feea09bed312dc8ad05c56b"
     },
     "Reject": {
-      "rules": 182208,
-      "clash_rules": 182203,
+      "rules": 182605,
+      "clash_rules": 182600,
       "types": {
-        "DOMAIN": 24798,
+        "DOMAIN": 24796,
         "DOMAIN-KEYWORD": 335,
-        "DOMAIN-SUFFIX": 156111,
+        "DOMAIN-SUFFIX": 156510,
         "IP-CIDR": 953,
         "IP-CIDR6": 6,
         "URL-REGEX": 5
       },
-      "sha256": "83e524baaede05c5ee057e99b289a6b8b86d4ee6a14041434934c96bd1896e15"
+      "sha256": "dffc5ae3219333f924e5d9323e2f7381eeb70de0766fb41cf775eaad3d1d2643"
     },
     "Telegram": {
       "rules": 40,
@@ -919,7 +919,7 @@
       ]
     }
   ],
-  "cross_provider_domain_coverages": 3697,
+  "cross_provider_domain_coverages": 3695,
   "domain_coverage_examples": [
     {
       "domain": "7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe",
