@@ -187,17 +187,17 @@
       "sha256": "a8b516163e1c07149d8bc7162f2edf65596c1a189feea09bed312dc8ad05c56b"
     },
     "Reject": {
-      "rules": 194195,
-      "clash_rules": 194190,
+      "rules": 195903,
+      "clash_rules": 195898,
       "types": {
-        "DOMAIN": 24797,
+        "DOMAIN": 24798,
         "DOMAIN-KEYWORD": 335,
-        "DOMAIN-SUFFIX": 168092,
+        "DOMAIN-SUFFIX": 169799,
         "IP-CIDR": 960,
         "IP-CIDR6": 6,
         "URL-REGEX": 5
       },
-      "sha256": "29ce8ca09def6d4effaca5dbd62f0b34a0d4d62881c52082a6e3c1fd233952d5"
+      "sha256": "83b2d4dc70d09cf3b4e975c5f91042b46d73dea5090a79009fe81cd2fd0f1bd1"
     },
     "Telegram": {
       "rules": 40,
@@ -919,7 +919,7 @@
       ]
     }
   ],
-  "cross_provider_domain_coverages": 3700,
+  "cross_provider_domain_coverages": 3701,
   "domain_coverage_examples": [
     {
       "domain": "apple-events.akamaized.net",
