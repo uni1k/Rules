@@ -187,17 +187,17 @@
       "sha256": "a8b516163e1c07149d8bc7162f2edf65596c1a189feea09bed312dc8ad05c56b"
     },
     "Reject": {
-      "rules": 195903,
-      "clash_rules": 195898,
+      "rules": 197320,
+      "clash_rules": 197315,
       "types": {
         "DOMAIN": 24798,
         "DOMAIN-KEYWORD": 335,
-        "DOMAIN-SUFFIX": 169799,
-        "IP-CIDR": 960,
+        "DOMAIN-SUFFIX": 171214,
+        "IP-CIDR": 962,
         "IP-CIDR6": 6,
         "URL-REGEX": 5
       },
-      "sha256": "83b2d4dc70d09cf3b4e975c5f91042b46d73dea5090a79009fe81cd2fd0f1bd1"
+      "sha256": "3edfb0f424587ab75c8fa4904212a33c19649f7c57f8dc302f9a5e46325fd525"
     },
     "Telegram": {
       "rules": 40,
@@ -922,75 +922,6 @@
   "cross_provider_domain_coverages": 3701,
   "domain_coverage_examples": [
     {
-      "domain": "apple-events.akamaized.net",
-      "suffix": "akamaized.net",
-      "providers": [
-        "GlobalMedia",
-        "Apple",
-        "Global"
-      ]
-    },
-    {
-      "domain": "appleworldwidedeveloper.hb-api.omtrdc.net",
-      "suffix": "omtrdc.net",
-      "providers": [
-        "Reject",
-        "Apple",
-        "Global"
-      ]
-    },
-    {
-      "domain": "appleworldwidedeveloper.sc.omtrdc.net",
-      "suffix": "omtrdc.net",
-      "providers": [
-        "Reject",
-        "Apple",
-        "Global"
-      ]
-    },
-    {
-      "domain": "beatselectronicsllc.tt.omtrdc.net",
-      "suffix": "omtrdc.net",
-      "providers": [
-        "Reject",
-        "Apple",
-        "Global"
-      ]
-    },
-    {
-      "domain": "e16991.b.akamaiedge.net",
-      "suffix": "b.akamaiedge.net",
-      "providers": [
-        "Apple",
-        "Microsoft"
-      ]
-    },
-    {
-      "domain": "icons.axm-usercontent-apple.com",
-      "suffix": "axm-usercontent-apple.com",
-      "providers": [
-        "Apple",
-        "Global"
-      ]
-    },
-    {
-      "domain": "lookup-api.apple.com.edgekey.net",
-      "suffix": "edgekey.net",
-      "providers": [
-        "Apple",
-        "Global"
-      ]
-    },
-    {
-      "domain": "p-events-delivery.akamaized.net",
-      "suffix": "akamaized.net",
-      "providers": [
-        "GlobalMedia",
-        "Apple",
-        "Global"
-      ]
-    },
-    {
       "domain": "0gr4uqmtt8y41hcjsgrzdrc31.ourdvsss.com",
       "suffix": "ourdvsss.com",
       "providers": [
@@ -1529,222 +1460,276 @@
       ]
     },
     {
-      "domain": "chat.openai.com.cdn.cloudflare.net",
-      "suffix": "cloudflare.net",
+      "domain": "apple.com.akadns.net",
+      "suffix": "akadns.net",
       "providers": [
-        "AI",
-        "Global"
-      ]
-    },
-    {
-      "domain": "openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net",
-      "suffix": "azurefd.net",
-      "providers": [
+        "Apple",
         "Microsoft",
-        "AI",
         "Global"
       ]
     },
     {
-      "domain": "openaicomproductionae4b.blob.core.windows.net",
-      "suffix": "blob.core.windows.net",
-      "providers": [
-        "AI",
-        "Global"
-      ]
-    },
-    {
-      "domain": "production-openaicom-storage.azureedge.net",
-      "suffix": "azureedge.net",
-      "providers": [
-        "Microsoft",
-        "AI",
-        "Global"
-      ]
-    },
-    {
-      "domain": "static.cloudflareinsights.com",
-      "suffix": "cloudflareinsights.com",
+      "domain": "appleworldwidedeveloper.hb-api.omtrdc.net",
+      "suffix": "omtrdc.net",
       "providers": [
         "Reject",
-        "AI",
+        "Apple",
         "Global"
       ]
     },
     {
-      "domain": "ai.google.dev",
-      "suffix": "google.dev",
-      "providers": [
-        "GlobalMedia",
-        "AI",
-        "Google",
-        "Global"
-      ]
-    },
-    {
-      "domain": "alkalimakersuite-pa.clients6.google.com",
-      "suffix": "google.com",
-      "providers": [
-        "AI",
-        "Google",
-        "Global"
-      ]
-    },
-    {
-      "domain": "makersuite.google.com",
-      "suffix": "google.com",
-      "providers": [
-        "AI",
-        "Google",
-        "Global"
-      ]
-    },
-    {
-      "domain": "7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe",
-      "suffix": "skk.moe",
+      "domain": "appleworldwidedeveloper.sc.omtrdc.net",
+      "suffix": "omtrdc.net",
       "providers": [
         "Reject",
-        "LAN",
-        "Direct",
-        "AI",
+        "Apple",
         "Global"
       ]
     },
     {
-      "domain": "api.github.com",
-      "suffix": "github.com",
+      "domain": "asahishimbun.sc.omtrdc.net",
+      "suffix": "omtrdc.net",
       "providers": [
-        "AI",
-        "GitHub",
+        "Reject",
         "Global"
       ]
     },
     {
-      "domain": "api.jetbrains.ai",
-      "suffix": "jetbrains.ai",
+      "domain": "assets1.xboxlive.com",
+      "suffix": "xboxlive.com",
       "providers": [
-        "GlobalMedia",
-        "AI",
+        "Microsoft",
+        "Game",
         "Global"
       ]
     },
     {
-      "domain": "jules.google.com",
-      "suffix": "google.com",
+      "domain": "assets2.xboxlive.com",
+      "suffix": "xboxlive.com",
       "providers": [
-        "AI",
-        "Google",
+        "Microsoft",
+        "Game",
         "Global"
       ]
     },
     {
-      "domain": "server.codeium.com",
-      "suffix": "codeium.com",
+      "domain": "az416426.vo.msecnd.net",
+      "suffix": "msecnd.net",
       "providers": [
-        "AI",
+        "Microsoft",
         "Global"
       ]
     },
     {
-      "domain": "aida.googleapis.com",
-      "suffix": "googleapis.com",
+      "domain": "az668014.vo.msecnd.net",
+      "suffix": "msecnd.net",
       "providers": [
-        "AI",
-        "Google",
+        "Microsoft",
         "Global"
       ]
     },
     {
-      "domain": "inference.codeium.com",
-      "suffix": "codeium.com",
+      "domain": "az764295.vo.msecnd.net",
+      "suffix": "msecnd.net",
       "providers": [
-        "AI",
+        "Microsoft",
         "Global"
       ]
     },
     {
-      "domain": "gateway.ai.cloudflare.com",
-      "suffix": "cloudflare.com",
+      "domain": "beatselectronicsllc.tt.omtrdc.net",
+      "suffix": "omtrdc.net",
       "providers": [
-        "AI",
+        "Reject",
+        "Apple",
         "Global"
       ]
     },
     {
-      "domain": "aisandbox-pa.googleapis.com",
-      "suffix": "googleapis.com",
+      "domain": "cdn.js7k.com",
+      "suffix": "js7k.com",
       "providers": [
-        "AI",
-        "Google",
+        "Reject",
         "Global"
       ]
     },
     {
-      "domain": "server.self-serve.windsurf.com",
-      "suffix": "windsurf.com",
+      "domain": "community.oneplus.com",
+      "suffix": "oneplus.com",
       "providers": [
-        "AI",
+        "Mainland",
         "Global"
       ]
     },
     {
-      "domain": "robinfrontend-pa.googleapis.com",
-      "suffix": "googleapis.com",
+      "domain": "configuration-lb.ls-apple.com.akadns.net",
+      "suffix": "akadns.net",
       "providers": [
-        "AI",
-        "Google",
+        "Apple",
+        "Microsoft",
         "Global"
       ]
     },
     {
-      "domain": "alkalicore-pa.clients6.google.com",
-      "suffix": "google.com",
+      "domain": "courier-push-apple.com.akadns.net",
+      "suffix": "akadns.net",
       "providers": [
-        "AI",
-        "Google",
+        "Apple",
+        "Microsoft",
         "Global"
       ]
     },
     {
-      "domain": "daily-cloudcode-pa.googleapis.com",
-      "suffix": "googleapis.com",
+      "domain": "databank.worldbank.org",
+      "suffix": "worldbank.org",
       "providers": [
-        "AI",
-        "Google",
+        "Mainland",
         "Global"
       ]
     },
     {
-      "domain": "file.oaiusercontent.com",
-      "suffix": "oaiusercontent.com",
+      "domain": "dc.services.visualstudio.com",
+      "suffix": "visualstudio.com",
       "providers": [
-        "AI",
+        "Microsoft",
         "Global"
       ]
     },
     {
-      "domain": "voice.telephony.goog",
-      "suffix": "telephony.goog",
+      "domain": "ea.tt.omtrdc.net",
+      "suffix": "omtrdc.net",
       "providers": [
-        "Google",
+        "Reject",
         "Global"
       ]
     },
     {
-      "domain": "aistudio.google.com",
-      "suffix": "google.com",
+      "domain": "espn.hb.omtrdc.net",
+      "suffix": "omtrdc.net",
       "providers": [
-        "GlobalMedia",
-        "Google",
+        "Reject",
         "Global"
       ]
     },
     {
-      "domain": "akmcdnoversea-tw.inter.ptqy.gitv.tv",
-      "suffix": "gitv.tv",
+      "domain": "espndotcom.tt.omtrdc.net",
+      "suffix": "omtrdc.net",
       "providers": [
-        "MainlandMedia",
-        "GlobalMedia"
+        "Reject",
+        "Global"
+      ]
+    },
+    {
+      "domain": "gog.qtlglb.com",
+      "suffix": "qtlglb.com",
+      "providers": [
+        "Mainland",
+        "Global"
+      ]
+    },
+    {
+      "domain": "lgelectronics.122.2o7.net",
+      "suffix": "2o7.net",
+      "providers": [
+        "Reject",
+        "Global"
+      ]
+    },
+    {
+      "domain": "linkedin.sc.omtrdc.net",
+      "suffix": "omtrdc.net",
+      "providers": [
+        "Reject",
+        "Global"
+      ]
+    },
+    {
+      "domain": "muse.jhu.edu",
+      "suffix": "jhu.edu",
+      "providers": [
+        "Mainland",
+        "Global"
+      ]
+    },
+    {
+      "domain": "nationalaustraliaban.tt.omtrdc.net",
+      "suffix": "omtrdc.net",
+      "providers": [
+        "Reject",
+        "Global"
+      ]
+    },
+    {
+      "domain": "nvidia.tt.omtrdc.net",
+      "suffix": "omtrdc.net",
+      "providers": [
+        "Reject",
+        "Global"
+      ]
+    },
+    {
+      "domain": "push-apple.com.akadns.net",
+      "suffix": "akadns.net",
+      "providers": [
+        "Apple",
+        "Microsoft",
+        "Global"
+      ]
+    },
+    {
+      "domain": "qualcomm.sc.omtrdc.net",
+      "suffix": "omtrdc.net",
+      "providers": [
+        "Reject",
+        "Global"
+      ]
+    },
+    {
+      "domain": "rsshub.henry.wang",
+      "suffix": "wang",
+      "providers": [
+        "Mainland",
+        "Global"
+      ]
+    },
+    {
+      "domain": "rt.services.visualstudio.com",
+      "suffix": "visualstudio.com",
+      "providers": [
+        "Microsoft",
+        "Global"
+      ]
+    },
+    {
+      "domain": "standchartbank.sc.omtrdc.net",
+      "suffix": "omtrdc.net",
+      "providers": [
+        "Reject",
+        "Global"
+      ]
+    },
+    {
+      "domain": "standchartbank.tt.omtrdc.net",
+      "suffix": "omtrdc.net",
+      "providers": [
+        "Reject",
+        "Global"
+      ]
+    },
+    {
+      "domain": "time.windows.com",
+      "suffix": "windows.com",
+      "providers": [
+        "Microsoft",
+        "Global"
+      ]
+    },
+    {
+      "domain": "vmware.tt.omtrdc.net",
+      "suffix": "omtrdc.net",
+      "providers": [
+        "Reject",
+        "Global"
       ]
     }
   ],
