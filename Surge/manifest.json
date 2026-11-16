@@ -35,16 +35,16 @@
   },
   "providers": {
     "AI": {
-      "rules": 94,
-      "clash_rules": 93,
+      "rules": 97,
+      "clash_rules": 96,
       "types": {
-        "DOMAIN": 28,
+        "DOMAIN": 31,
         "DOMAIN-KEYWORD": 5,
         "DOMAIN-SUFFIX": 58,
         "IP-CIDR": 2,
         "URL-REGEX": 1
       },
-      "sha256": "53e7628b83160a48a5e757fe6ccabd08d42d9a7bc1943b2b343b4c3105b351cd"
+      "sha256": "a427c830358b62d9311598a320334208cb320224e5e2bea7cec40be5cdae747e"
     },
     "Apple": {
       "rules": 1615,
@@ -187,17 +187,17 @@
       "sha256": "a8b516163e1c07149d8bc7162f2edf65596c1a189feea09bed312dc8ad05c56b"
     },
     "Reject": {
-      "rules": 197635,
-      "clash_rules": 197630,
+      "rules": 197197,
+      "clash_rules": 197192,
       "types": {
         "DOMAIN": 24798,
         "DOMAIN-KEYWORD": 335,
-        "DOMAIN-SUFFIX": 171529,
+        "DOMAIN-SUFFIX": 171091,
         "IP-CIDR": 962,
         "IP-CIDR6": 6,
         "URL-REGEX": 5
       },
-      "sha256": "ca95dca0d80583f6b27d33d8f7b8386ac5de89ac1abf3c04dc427dc9ae79eeed"
+      "sha256": "992db781b3e6f85ffb9a782a84f600dfa910c7ce391e8f4ed178f6d85b5cde97"
     },
     "Telegram": {
       "rules": 40,
@@ -919,7 +919,7 @@
       ]
     }
   ],
-  "cross_provider_domain_coverages": 3701,
+  "cross_provider_domain_coverages": 3703,
   "domain_coverage_examples": [
     {
       "domain": "eaasserts-a.akamaihd.net",

@@ -67,6 +67,7 @@ payload:
   - DOMAIN-SUFFIX,openart.ai
   - DOMAIN-SUFFIX,clipdrop.co
   - DOMAIN-SUFFIX,chatgpt.site
+  - DOMAIN,cloud.zed.dev
   - DOMAIN-SUFFIX,gemini.google
   - DOMAIN,openrouter.ai
   - DOMAIN-SUFFIX,perplexity.ai
@@ -78,6 +79,7 @@ payload:
   - DOMAIN,server.codeium.com
   - DOMAIN,aida.googleapis.com
   - DOMAIN-SUFFIX,aistudio.google.com
+  - DOMAIN,aicode.googleapis.com
   - DOMAIN,inference.codeium.com
   - DOMAIN-SUFFIX,makersuite.google.com
   - DOMAIN-SUFFIX,notebooklm.google.com
@@ -91,6 +93,7 @@ payload:
   - DOMAIN,alkalicore-pa.clients6.google.com
   - DOMAIN,daily-cloudcode-pa.googleapis.com
   - DOMAIN-SUFFIX,generativelanguage.googleapis.com
+  - DOMAIN,daily-cloudcode-pa.sandbox.googleapis.com
   - DOMAIN-KEYWORD,alkalimakersuite-pa.clients6.google.com
   - DOMAIN,file.oaiusercontent.com
 type: file
