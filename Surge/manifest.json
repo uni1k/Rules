@@ -187,17 +187,17 @@
       "sha256": "a8b516163e1c07149d8bc7162f2edf65596c1a189feea09bed312dc8ad05c56b"
     },
     "Reject": {
-      "rules": 197680,
-      "clash_rules": 197675,
+      "rules": 200051,
+      "clash_rules": 200046,
       "types": {
-        "DOMAIN": 24798,
+        "DOMAIN": 24797,
         "DOMAIN-KEYWORD": 335,
-        "DOMAIN-SUFFIX": 171575,
+        "DOMAIN-SUFFIX": 173947,
         "IP-CIDR": 961,
         "IP-CIDR6": 6,
         "URL-REGEX": 5
       },
-      "sha256": "28f4d47b03bed80904a430533f982d57b6be3e8eb35efb70ac398c7985771d7e"
+      "sha256": "b6d6c6b060f217c134aad80e3d599ff427a09259d722e610b6deb127df3a9cb0"
     },
     "Telegram": {
       "rules": 40,
@@ -919,7 +919,7 @@
       ]
     }
   ],
-  "cross_provider_domain_coverages": 3704,
+  "cross_provider_domain_coverages": 3703,
   "domain_coverage_examples": [
     {
       "domain": "7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe",
